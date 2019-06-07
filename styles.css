@@ -88,4 +88,104 @@ ol, ul{
   height: 733px;
   background: url("./imgs/sweet morning") no-repeat;
   background-size: cover;
+  padding-top: 209px;
+  padding-left: 258px;
+  padding-right: 146px;
+}
+
+.swiper-container{
+}
+
+.slide {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 311px;
+  margin: auto 0;
+}
+
+.sneaker {
+  height: 100%;
+  float: left;
+  background-color: blue;
+}
+
+.sneaker .ellipse {
+  position:absolute;
+  left: 30px;
+  top: 10px;
+  width: 304px;
+  height: 311px;
+  border-radius: 300px;
+  background-color: rgba(252, 228, 18, 0.94);
+}
+
+.sneaker img {
+  position:absolute;
+  width: 373px;
+  height: 361px;
+  transform: rotate(30deg);
+}
+
+.sneaker .add {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 30px;
+  background-color: #E87747;
+  display: flex;
+  bottom: -10px;
+  left: 235px;
+}
+
+.sneaker .add .add-symbol {
+  font-size: 37px;
+  font-weight: bold;
+  color: #fff;
+  margin: auto;
+}
+
+.slide .text{
+  margin-right: 139px;
+  float: right;
+  color: #fff;
+}
+
+.slide .text .big-text{
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.slide .text .big-text span:first-child{
+  font-size: 72px;
+  line-height: 85px;
+  font-weight: bold;
+}
+
+.slide .text .big-text span:last-child{
+  font-size: 48px;
+  line-height: 57px;
+  font-weight: bold;
+}
+
+.slide .text .small-text{
+  font-size: 18px;
+  line-height: 27px;
+
+}
+
+.slide .button{
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #AF3838;
+  width: 180px;
+  height: 40px;
+  background-color: rgba(255, 245, 4, 0.93);
+  box-shadow: 0px 4px 20px rgba(130, 22, 22, 0.2);
+  border-radius: 300px;
+  padding-top: 10px;
+  font-weight: bold;
+  float: left;
+  margin-top: 64px;
 }
