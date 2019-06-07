@@ -93,7 +93,10 @@ ol, ul{
   padding-right: 146px;
 }
 
-.swiper-container{
+.swiper-button-prev, .swiper-button-next {
+  color: #fff;
+  width: 48px;
+  height: 48px;
 }
 
 .slide {
@@ -136,6 +139,7 @@ ol, ul{
   display: flex;
   bottom: -10px;
   left: 235px;
+  cursor: pointer;
 }
 
 .sneaker .add .add-symbol {
@@ -188,4 +192,5 @@ ol, ul{
   font-weight: bold;
   float: left;
   margin-top: 64px;
+  cursor: pointer;
 }
