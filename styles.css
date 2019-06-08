@@ -278,3 +278,18 @@ ol, ul{
   box-sizing: border-box;
   border-radius: 600px;
 }
+
+.social-media{
+  position:absolute;
+  right: 146px;
+  bottom: 74px;
+}
+
+.social-media svg{
+  vertical-align: middle;
+  margin-left:23px;
+}
+
+#second-window {
+  
+}
