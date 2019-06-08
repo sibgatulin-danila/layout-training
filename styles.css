@@ -319,7 +319,7 @@ ol, ul{
   color: #452A32;
 }
 
-#second-window .sneakers .seasons {
+#second-window .sneakers .pinky-model {
   margin-top: 58px;
   width: 1163.8px;
   height: 541.8px;
@@ -328,14 +328,14 @@ ol, ul{
 
 }
 
-#second-window .sneakers .seasons .tabs{
+#second-window .sneakers .pinky-model .tabs{
   width: 432px;
   height: 20px;
   margin-top: 10px;
   margin-left: 10px;
 }
 
-#second-window .sneakers .seasons .tabs .tab {
+#second-window .sneakers .pinky-model .tabs .tab {
   display: inline-block;
   font-size: 18px;
   line-height: 21px;
@@ -349,12 +349,19 @@ ol, ul{
   cursor: pointer;
 }
 
-#second-window .sneakers .seasons .tabs .tab:hover,
-#second-window .sneakers .seasons .tabs .tab-active {
+#second-window .sneakers .pinky-model .tabs .tab:hover,
+#second-window .sneakers .pinky-model .tabs .tab-active {
   background-image: linear-gradient(to left, #FFC670 -58.54%, #FF6492 159.35%);
   /* border-bottom: 4px solid blue; */
 }
 
-#second-window .sneakers .seasons .tabs .tab:last-child{
+#second-window .sneakers .pinky-model .tabs .tab:last-child{
   margin-right: 0;
+}
+
+.pinky-model .photo{
+  margin-top: 42px;
+  width: 594px;
+  height: 470px;
+  
 }
