@@ -323,7 +323,7 @@ ol, ul{
   margin-top: 58px;
   width: 1163.8px;
   height: 541.8px;
-  background-color: blue;
+  /* background-color: blue; */
   border: 0.1px solid #fff;
 
 }
@@ -336,17 +336,23 @@ ol, ul{
 }
 
 #second-window .sneakers .pinky-model .tabs .tab {
-  display: inline;
+  display: inline-block;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   color: #452A32;
   text-transform:capitalize;
   margin-right: 48px;
+  background-position:  0 100%, 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+  cursor: pointer;
 }
 
-#second-window .sneakers .pinky-model .tabs .tab:hover {
-  text-decoration: underline;
+#second-window .sneakers .pinky-model .tabs .tab:hover,
+#second-window .sneakers .pinky-model .tabs .tab-active {
+  background-image: linear-gradient(to left, #FFC670 -58.54%, #FF6492 159.35%);
+  /* border-bottom: 4px solid blue; */
 }
 
 #second-window .sneakers .pinky-model .tabs .tab:last-child{
