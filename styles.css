@@ -85,32 +85,43 @@ ol, ul{
 }
 
 #first-window{
+  z-index: 0;
   height: 733px;
   background: url("./imgs/sweet morning") no-repeat;
   background-size: cover;
   padding-top: 209px;
-  padding-left: 258px;
-  padding-right: 146px;
+  padding-left: 130px;
+  padding-right: 150px;
 }
 
 .swiper-button-prev, .swiper-button-next {
   color: #fff;
   width: 48px;
   height: 48px;
+  border: 1px solid white;
+  border-radius: 140px;
+}
+
+.swiper-container {
+  /* width: 1140px; */
+  /* margin: auto;
+  left: -150px; */
 }
 
 .slide {
   position: relative;
   top: 0;
   left: 0;
-  height: 311px;
-  margin: auto 0;
+  width: 1140px;
+  /* background-color: red; */
+  height: 450px;
+  margin-left: 110px;;
 }
 
 .sneaker {
   height: 100%;
   float: left;
-  background-color: blue;
+  padding-left: 10px;
 }
 
 .sneaker .ellipse {
@@ -137,7 +148,7 @@ ol, ul{
   border-radius: 30px;
   background-color: #E87747;
   display: flex;
-  bottom: -10px;
+  bottom: 127px;
   left: 235px;
   cursor: pointer;
 }
@@ -147,10 +158,11 @@ ol, ul{
   font-weight: bold;
   color: #fff;
   margin: auto;
+  cursor: pointer;
 }
 
 .slide .text{
-  margin-right: 139px;
+  margin-right: 199px;
   float: right;
   color: #fff;
 }
@@ -191,6 +203,10 @@ ol, ul{
   padding-top: 10px;
   font-weight: bold;
   float: left;
-  margin-top: 64px;
+  margin-top: 60px;
   cursor: pointer;
+}
+
+.swiper-pagination {
+  width: 310px;
 }
