@@ -2,6 +2,15 @@ html{
   height: 100%;
 }
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./res/ofont.ru_Proxima Nova.ttf");
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./res/Rubik-Bold.ttf");
+}
+
 body{
   width: 1440px;
   margin: 0 auto;
@@ -44,6 +53,9 @@ ol, ul{
 }
 
 #header{
+  font-family: Proxima Nova;
+  font-size: 16px;
+  line-height: 19px;
   position:absolute;
   width: 1150px;
   top: 32px;
@@ -54,6 +66,7 @@ ol, ul{
 
 .logo{
   float: left;
+  margin-top: 10px;
 }
 
 .menu {
@@ -107,6 +120,7 @@ ol, ul{
   /* width: 1140px; */
   /* margin: auto;
   left: -150px; */
+  height: 460px;;
 }
 
 .slide {
@@ -173,6 +187,7 @@ ol, ul{
 }
 
 .slide .text .big-text span:first-child{
+  font-family: Rubik;
   font-size: 72px;
   line-height: 85px;
   font-weight: bold;
@@ -180,11 +195,13 @@ ol, ul{
 
 .slide .text .big-text span:last-child{
   font-size: 48px;
+  font-family: Rubik;
   line-height: 57px;
   font-weight: bold;
 }
 
 .slide .text .small-text{
+  font-family: Proxima Nova;
   font-size: 18px;
   line-height: 27px;
 
@@ -192,6 +209,7 @@ ol, ul{
 
 .slide .button{
   font-size: 16px;
+  font-family: Proxima Nova;
   line-height: 19px;
   text-align: center;
   color: #AF3838;
@@ -208,5 +226,55 @@ ol, ul{
 }
 
 .swiper-pagination {
-  width: 310px;
+  /* top: 430px; */
+}
+
+.swiper-pagination-bullet {
+  width: 98px;
+  height: 3px;
+  background-color:  #FFFFFF;
+  opacity: 0.3;
+  border-radius: 300px;
+}
+
+.swiper-pagination-bullet-active{
+   background-color: #FCF312;
+   opacity: 1;
+   border-radius: 300px;
+
+}
+
+.next-window {
+  width: 34px;
+  height: 142px;
+  position: absolute;
+  bottom: 30px;;
+}
+.next-window .text {
+  font-family: Proxima Nova;
+  transform: rotate(-90deg);
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.next-window .arrow {
+  padding-top: 10px;
+  /* position: absolute; */
+  text-align: center;
+  vertical-align: bottom;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 26px;
+  height: 44px;
+  left: 150px;
+  top: 626px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  border-radius: 600px;
 }
