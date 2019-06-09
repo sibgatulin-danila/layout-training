@@ -501,6 +501,25 @@ ol, ul{
   padding: 10px;
 }
 /* конец недоделанного кода для кнопки выбора размера */
+
+#second-window .info h1{
+  font-size: 32px;
+  line-height: 38px;
+  color: #452A32;
+  font-family: Rubik;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+#second-window .info p{
+  font-size: 16px;
+  line-height: 23px;
+  color: #917D83;
+  font-family: Roboto;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
 #second-window .prices{
   margin-top: 55px;
   font-family: Rubik;
