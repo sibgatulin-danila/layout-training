@@ -387,7 +387,10 @@ ol, ul{
   position:absolute;
   width: 557px;
   bottom: 0px;
+}
 
+#second-window .pinky-model .gallery-top .swiper-slide:last-child>img{
+  bottom: -90px;
 }
 
 #second-window .pinky-model .gallery-thumbs .swiper-slide{
@@ -399,14 +402,16 @@ ol, ul{
   overflow: hidden;
 }
 
+#second-window .pinky-model .gallery-thumbs .swiper-slide-thumb-active{
+  opacity: 1;
+}
+
 #second-window .pinky-model .gallery-thumbs img{
   position: absolute;
   width: 140px;
   bottom: 0px;
 }
 
-
-
-#second-window .pinky-model .gallery-thumbs .swiper-slide-thumb-active{
-  opacity: 1;
+#second-window .pinky-model .gallery-thumbs .swiper-slide:last-child > img{
+  bottom: -20px;
 }
