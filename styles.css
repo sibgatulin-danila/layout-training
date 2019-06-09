@@ -367,7 +367,7 @@ ol, ul{
 }
 
 #second-window .pinky-model .gallery-top{
-  width: 557px;
+  width: 594px;
   height: 360px;
 }
 
@@ -384,9 +384,11 @@ ol, ul{
 }
 
 #second-window .pinky-model .gallery-top img{
+  right: 18.5px;
   position:absolute;
   width: 557px;
   bottom: 0px;
+  padding: auto;
 }
 
 #second-window .pinky-model .gallery-top .swiper-slide:last-child>img{
@@ -414,4 +416,20 @@ ol, ul{
 
 #second-window .pinky-model .gallery-thumbs .swiper-slide:last-child > img{
   bottom: -20px;
+}
+
+#second-window .pinky-model .swiper-button-next,
+#second-window .pinky-model .swiper-button-prev{
+  border:0;
+  background-color: #FF6492;
+  width: 40px;
+  height: 40px;
+
+}
+#second-window .pinky-model .swiper-button-next{
+  right: 0;
+}
+
+#second-window .pinky-model .swiper-button-prev{
+  left: 0;
 }
