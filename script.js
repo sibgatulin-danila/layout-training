@@ -14,7 +14,7 @@ var mySwiper = new Swiper('#first-window .swiper-container', {
 });
 
 var galleryThumbs = new Swiper('#second-window .gallery-thumbs', {
-  spaceBetween:17,
+  spaceBetween:10,
   slidesPerView: 4,
   loop: false,
   freeMode: true,
@@ -32,4 +32,4 @@ var galleryTop = new Swiper('#second-window .gallery-top', {
       thumbs: {
         swiper: galleryThumbs,
       },
-    });
+});
