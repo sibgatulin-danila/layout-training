@@ -238,9 +238,6 @@ ol, ul{
   cursor: pointer;
 }
 
-.swiper-pagination {
-  /* top: 430px; */
-}
 
 .swiper-pagination-bullet {
   width: 98px;
@@ -261,7 +258,8 @@ ol, ul{
   width: 34px;
   height: 142px;
   position: absolute;
-  bottom: 30px;;
+  bottom: 30px;
+  z-index: 10;
 }
 .next-window .text {
   font-family: Proxima Nova;
