@@ -340,7 +340,8 @@ ol, ul{
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #452A32;
+  /* color: #452A32; */
+  color: #BEBEBE;
   text-transform:capitalize;
   margin-right: 48px;
   background-position:  0 100%, 0 0;
@@ -352,16 +353,60 @@ ol, ul{
 #second-window .sneakers .pinky-model .tabs .tab:hover,
 #second-window .sneakers .pinky-model .tabs .tab-active {
   background-image: linear-gradient(to left, #FFC670 -58.54%, #FF6492 159.35%);
-  /* border-bottom: 4px solid blue; */
+  color: #452A32;/* border-bottom: 4px solid blue; */
 }
 
 #second-window .sneakers .pinky-model .tabs .tab:last-child{
   margin-right: 0;
 }
 
-.pinky-model .photo{
+#second-window .pinky-model .photo{
   margin-top: 42px;
   width: 594px;
   height: 470px;
+}
 
+#second-window .pinky-model .gallery-top{
+  width: 557px;
+  height: 360px;
+}
+
+#second-window .pinky-model .gallery-thumbs{
+  height: 96px;
+  padding-top: 14px;
+  width: 557px;
+  background-color: #fff;
+
+}
+
+#second-window .pinky-model .gallery-top .swiper-slide{
+  position: relative;
+}
+
+#second-window .pinky-model .gallery-top img{
+  position:absolute;
+  width: 557px;
+  bottom: 0px;
+
+}
+
+#second-window .pinky-model .gallery-thumbs .swiper-slide{
+  position: relative;
+  width: 144px;
+  padding-right: 17px;
+  height: 96px;
+  opacity: 0.6;
+  overflow: hidden;
+}
+
+#second-window .pinky-model .gallery-thumbs img{
+  position: absolute;
+  width: 140px;
+  bottom: 0px;
+}
+
+
+
+#second-window .pinky-model .gallery-thumbs .swiper-slide-thumb-active{
+  opacity: 1;
 }
