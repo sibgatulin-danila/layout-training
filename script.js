@@ -33,3 +33,9 @@ var galleryTop = new Swiper('#second-window .gallery-top', {
         swiper: galleryThumbs,
       },
 });
+
+window.onload = function() {
+  document.getElementById('dd-size').onclick = function() {
+    // тут должен быть код для отображения количества доступных размеров кроссовок
+  }
+}

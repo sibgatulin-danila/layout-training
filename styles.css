@@ -9,7 +9,17 @@ html{
 @font-face {
   font-family: "Rubik";
   src: url("./res/Rubik-Bold.ttf");
+
+  font-weight: bold;
 }
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./res/Rubik-Regular.ttf");
+
+  font-weight: normal;
+}
+
 
 body{
   width: 1440px;
@@ -325,14 +335,15 @@ ol, ul{
   height: 541.8px;
   /* background-color: blue; */
   border: 0.1px solid #fff;
-
 }
 
 #second-window .sneakers .pinky-model .tabs{
-  width: 460px;
+  width: 436px;
   height: 20px;
   margin-top: 10px;
   margin-left: 10px;
+  margin-right: 0;
+  float: left;
 }
 
 #second-window .sneakers .pinky-model .tabs .tab {
@@ -340,6 +351,7 @@ ol, ul{
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  font-family: Roboto;
   /* color: #452A32; */
   color: #BEBEBE;
   text-transform:capitalize;
@@ -364,6 +376,8 @@ ol, ul{
   margin-top: 42px;
   width: 594px;
   height: 470px;
+  margin-left: -10px;
+  float: left;
 }
 
 #second-window .pinky-model .gallery-top{
@@ -424,12 +438,113 @@ ol, ul{
   background-color: #FF6492;
   width: 40px;
   height: 40px;
-
 }
+
 #second-window .pinky-model .swiper-button-next{
   right: 0;
 }
 
 #second-window .pinky-model .swiper-button-prev{
   left: 0;
+}
+
+#second-window .pinky-model .info{
+  width: 459px;
+  height: 496px;
+  margin-left: 111px;
+  margin-top: -30px;
+  float: right;
+}
+
+/*  недоделанный код для выбора размера */
+#dd-size{
+  margin-top: 40px;
+  width: 226px;
+  height: 44px;
+  position: relative;
+  border: 1px solid #F2E0E5;
+  color: #917D83;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 30px;
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 125%;
+  padding-left: 25px;
+  padding-top: 13px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+#dd-size:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #FF6492 transparent;
+}
+
+#dd-size .dropdown{
+  position:absolute;
+  top: 50px;;
+  left: 25px;
+  right: 0;
+  display: none;
+}
+
+#dd-size .dropdown li{
+  padding: 10px;
+}
+/* конец недоделанного кода для кнопки выбора размера */
+#second-window .prices{
+  margin-top: 55px;
+  font-family: Rubik;
+  font-weight: normal;
+}
+
+#second-window .prices span:first-child{
+  color: #FF6492;
+  font-size: 24px;
+  line-height: 28px;
+
+}
+
+#second-window .prices span:nth-child(2){
+  color: #FF6492;
+  margin-left: 6px;
+  font-size: 16px;
+  line-height: 18.96px;
+  vertical-align: top;
+}
+
+#second-window .prices span:nth-child(3){
+  color: #BEBEBE;
+  margin-left: 18px;
+  font-size: 20px;
+  line-height: 24px;
+  vertical-align: top;
+}
+
+#second-window .prices span:nth-child(4){
+  color: #BEBEBE;
+  margin-left: 6px;
+  font-size: 16px;
+  line-height: 18.96px;
+  vertical-align: top;
+}
+
+#second-window .prices div.line{
+  position: relative;
+  display: inline-block;
+  right: 70px;
+  bottom: 10px;
+  width: 59px;
+  height:2px;
+  border: 1.9px solid #BEBEBE;
+  transform: matrix(0.99, -0.14, 0.13, 0.99, 0, 0);
 }
