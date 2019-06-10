@@ -461,7 +461,8 @@ ol, ul{
     margin-left: 40px;
     width: 226px;
     height: 44px;
-    position: relative;
+    position: absolute;
+    z-index: 10;
     border: 1px solid #F2E0E5;
     color: #917D83;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -538,7 +539,7 @@ ol, ul{
 }
 
 #second-window .prices{
-  margin-top: 55px;
+  margin-top: 125px;
   font-family: Rubik;
   font-weight: normal;
 }
