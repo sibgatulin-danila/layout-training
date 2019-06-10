@@ -34,8 +34,19 @@ var galleryTop = new Swiper('#second-window .gallery-top', {
       },
 });
 
-window.onload = function() {
-  document.getElementById('dd-size').onclick = function() {
-    // тут должен быть код для отображения количества доступных размеров кроссовок
-  }
-}
+$(document).ready(function() {
+    $('#dd-size').click(function() {
+        if (this.className == 'disabled') {
+            let len = $(this).find('li').length;
+            $(this).height(len * 37 + 35);
+            this.className = 'enabled';
+            $('#dd-size .arrow-down:first').prop('className', 'arrow-up');
+            $('#dd-size .dropdown:first').prop('className', 'dropdown active');
+        } else {
+            $(this).height(29);
+            this.className = 'disabled';
+            $('#dd-size .arrow-up:first').prop('className', 'arrow-down');
+            $('#dd-size .dropdown:first').prop('className', 'dropdown non-active');
+        }
+    })
+});
