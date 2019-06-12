@@ -50,4 +50,12 @@ $(document).ready(function() {
             $('#dd-size .dropdown:first').prop('className', 'dropdown drop-off');
         }
     })
+
+    $('a[href^="#second-window"]').on('click', function(event) {
+        var sc = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(sc).offset().top
+        }, 1000);
+    })
+
 });
