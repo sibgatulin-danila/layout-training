@@ -1,0 +1,41 @@
+.sneaker {
+    height: 100%;
+    float: left;
+    padding-left: 10px;
+
+    .ellipse {
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        width: 304px;
+        height: 311px;
+        border-radius: 300px;
+        background-color: rgba(252, 228, 18, 0.94);
+    }
+
+    img {
+        position: absolute;
+        width: 373px;
+        height: 361px;
+        transform: rotate(30deg);
+    }
+
+    .add {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        border-radius: 30px;
+        background-color: #E87747;
+        display: flex;
+        bottom: 127px;
+        left: 235px;
+        cursor: pointer;
+
+        .add-symbol {
+            font-size: 37px;
+            font-weight: bold;
+            color: #fff;
+            margin: auto;
+        }
+    }
+}

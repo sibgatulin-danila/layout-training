@@ -169,7 +169,8 @@ ol, ul {
           margin: auto; }
   #first-window .swiper-container {
     height: 460px; }
-  #first-window .swiper-button {
+  #first-window .swiper-button-next,
+  #first-window .swiper-button-prev {
     color: #fff;
     width: 48px;
     height: 48px;
@@ -344,48 +345,6 @@ ol, ul {
           font-family: Roboto;
           font-weight: normal;
           opacity: 0.9; }
-      #second-window .sneakers .pinky-model #dd-size {
-        margin-top: 40px;
-        width: 226px;
-        height: 44px;
-        position: absolute;
-        z-index: 10;
-        border: 1px solid #F2E0E5;
-        color: #917D83;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        border-radius: 30px;
-        font-size: 14px;
-        font-family: Roboto;
-        line-height: 125%;
-        padding-left: 25px;
-        padding-top: 13px;
-        background-color: #fff;
-        cursor: pointer; }
-        #second-window .sneakers .pinky-model #dd-size > .arrow {
-          position: absolute;
-          color: #917D83;
-          font-size: 30px;
-          display: inline; }
-          #second-window .sneakers .pinky-model #dd-size > .arrow-down {
-            transform: rotate(90deg);
-            right: 20px; }
-          #second-window .sneakers .pinky-model #dd-size > .arrow-up {
-            transform: rotate(270deg);
-            right: 25px; }
-        #second-window .sneakers .pinky-model #dd-size .dropdown li {
-          width: 170px;
-          padding: 10px; }
-        #second-window .sneakers .pinky-model #dd-size .drop {
-          position: absolute;
-          top: 45px;
-          left: 25px;
-          visibility: visible; }
-          #second-window .sneakers .pinky-model #dd-size .drop li:hover {
-            background: #bebebe;
-            border-radius: 10px; }
-          #second-window .sneakers .pinky-model #dd-size .drop-off {
-            position: absolute;
-            visibility: hidden; }
       #second-window .sneakers .pinky-model .prices {
         margin-top: 125px;
         font-family: Rubik;
@@ -436,5 +395,47 @@ ol, ul {
         font-weight: normal;
         font-size: 16px;
         line-height: 23px; }
+      #second-window .sneakers .pinky-model #dd-size {
+        margin-top: 40px;
+        width: 226px;
+        height: 44px;
+        position: absolute;
+        z-index: 10;
+        border: 1px solid #F2E0E5;
+        color: #917D83;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        font-size: 14px;
+        font-family: Roboto;
+        line-height: 125%;
+        padding-left: 25px;
+        padding-top: 13px;
+        background-color: #fff;
+        cursor: pointer; }
+        #second-window .sneakers .pinky-model #dd-size > .arrow {
+          position: absolute;
+          color: #917D83;
+          font-size: 30px;
+          display: inline; }
+          #second-window .sneakers .pinky-model #dd-size > .arrow-down {
+            transform: rotate(90deg);
+            right: 20px; }
+          #second-window .sneakers .pinky-model #dd-size > .arrow-up {
+            transform: rotate(270deg);
+            right: 25px; }
+        #second-window .sneakers .pinky-model #dd-size .dropdown li {
+          width: 170px;
+          padding: 10px; }
+        #second-window .sneakers .pinky-model #dd-size .drop {
+          position: absolute;
+          top: 45px;
+          left: 25px;
+          visibility: visible; }
+          #second-window .sneakers .pinky-model #dd-size .drop li:hover {
+            background: #bebebe;
+            border-radius: 10px; }
+          #second-window .sneakers .pinky-model #dd-size .drop-off {
+            position: absolute;
+            visibility: hidden; }
 
 /*# sourceMappingURL=style.css.map */
