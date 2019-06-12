@@ -1,0 +1,57 @@
+#dd-size {
+    margin-top: 40px;
+    width: 226px;
+    height: 44px;
+    position: absolute;
+    z-index: 10;
+    border: 1px solid #F2E0E5;
+    color: #917D83;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: Roboto;
+    line-height: 125%;
+    padding-left: 25px;
+    padding-top: 13px;
+    background-color: #fff;
+    cursor: pointer;
+
+    > .arrow {
+        position: absolute;
+        color: #917D83;
+        font-size: 30px;
+        display: inline;
+
+        &-down {
+            transform: rotate(90deg);
+            right: 20px;
+        }
+
+        &-up {
+            transform: rotate(270deg);
+            right: 25px;
+        }
+    }
+
+    .dropdown li {
+        width: 170px;
+        padding: 10px;
+    }
+
+    .drop {
+        position: absolute;
+        top: 45px;
+        left: 25px;
+        visibility: visible;
+
+        li:hover {
+            background: #bebebe;
+            border-radius: 10px;
+        }
+
+        &-off {
+            position: absolute;
+            visibility: hidden;
+        }
+    }
+}

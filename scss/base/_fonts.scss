@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../res/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('../res/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../res/ProximaNova-Regular.woff') format('woff'),
+		url('../res/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('../res/Rubik-Bold.eot');
+	src: local('Rubik Bold'), local('Rubik-Bold'),
+		url('../res/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../res/Rubik-Bold.woff') format('woff'),
+		url('../res/Rubik-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('../res/Rubik-Regular.eot');
+	src: local('Rubik'), local('Rubik-Regular'),
+		url('../res/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../res/Rubik-Regular.woff') format('woff'),
+		url('../res/Rubik-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,99 @@
+.slide {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1140px;
+    height: 450px;
+    margin-left: 110px;
+
+    .text {
+        margin-right: 199px;
+        float: right;
+        color: #fff;
+
+        .big-text {
+            font-style: italic;
+            text-transform: uppercase;
+
+            span:first-child {
+                font-family: Rubik;
+                font-size: 72px;
+                line-height: 85px;
+                font-weight: bold;
+            }
+
+            span:last-child {
+                font-size: 48px;
+                font-family: Rubik;
+                line-height: 57px;
+                font-weight: bold;
+            }
+        }
+
+        .small-text {
+            font-family: Proxima Nova;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+
+    .button {
+        font-size: 16px;
+        font-family: Proxima Nova;
+        line-height: 19px;
+        text-align: center;
+        color: #AF3838;
+        width: 180px;
+        height: 40px;
+        background-color: rgba(255, 245, 4, 0.93);
+        box-shadow: 0 4px 20px rgba(130, 22, 22, 0.2);
+        border-radius: 300px;
+        padding-top: 10px;
+        font-weight: bold;
+        float: left;
+        margin-top: 60px;
+        cursor: pointer;
+    }
+
+    .sneaker {
+        height: 100%;
+        float: left;
+        padding-left: 10px;
+
+        .ellipse {
+            position: absolute;
+            left: 30px;
+            top: 10px;
+            width: 304px;
+            height: 311px;
+            border-radius: 300px;
+            background-color: rgba(252, 228, 18, 0.94);
+        }
+
+        img {
+            position: absolute;
+            width: 373px;
+            height: 361px;
+            transform: rotate(30deg);
+        }
+
+        .add {
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            border-radius: 30px;
+            background-color: #E87747;
+            display: flex;
+            bottom: 127px;
+            left: 235px;
+            cursor: pointer;
+
+            .add-symbol {
+                font-size: 37px;
+                font-weight: bold;
+                color: #fff;
+                margin: auto;
+            }
+        }
+    }
+}
