@@ -447,7 +447,6 @@ ol, ul {
     text-align: center; }
     #advantages .headline p {
       font-family: Rubik;
-      font-weight: 500;
       font-size: 42px;
       line-height: 50px;
       color: #452A32; }
@@ -459,9 +458,9 @@ ol, ul {
     margin-right: auto;
     display: flex;
     justify-content: space-between; }
-    #advantages .advantages .advantage {
+    #advantages .advantages.advantage {
       text-align: center; }
-      #advantages .advantages .advantage .img {
+      #advantages .advantages.advantage.img {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -471,16 +470,15 @@ ol, ul {
         border-radius: 98px;
         background: linear-gradient(125.58deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
         transform: matrix(-1, 0, 0, 1, 0, 0); }
-        #advantages .advantages .advantage .img .img-wrapper {
+        #advantages .advantages.advantage.img.img-wrapper {
           position: relative;
           right: 1px; }
-      #advantages .advantages .advantage .content h2 {
+      #advantages .advantages.advantage .content h2 {
         font-family: Rubik;
-        font-weight: 500;
         font-size: 20px;
         line-height: 24px;
         color: #452A32; }
-      #advantages .advantages .advantage .content p {
+      #advantages .advantages.advantage .content p {
         font-family: Roboto;
         font-weight: normal;
         font-size: 16px;
