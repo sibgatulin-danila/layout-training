@@ -1,0 +1,47 @@
+.advantages {
+    width: 1050px;
+    height: 205px;
+    margin-top: 88px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .advantage {
+        text-align: center;
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 33px;
+            width: 98px;
+            height: 98px;
+            border-radius: 98px;
+            background: linear-gradient(125.58deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+
+            .img-wrapper{
+                position: relative;
+                right: 1px;
+            }
+        }
+        .content{
+            h2{
+                font-family: Rubik;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color:#452A32;
+            }
+            p{
+                font-family: Roboto;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 23px;
+                color: #917D83;
+                opacity: 0.9;
+            }
+        }
+    }
+}

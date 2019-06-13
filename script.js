@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('#first-window .swiper-container', {
+var mySwiper = new Swiper('#first-screen .swiper-container', {
     direction: 'horizontal',
     loop: false,
     pagination: {
@@ -13,7 +13,7 @@ var mySwiper = new Swiper('#first-window .swiper-container', {
     },
 });
 
-var galleryThumbs = new Swiper('#second-window .gallery-thumbs', {
+var galleryThumbs = new Swiper('#sneakers .gallery-thumbs', {
     spaceBetween: 10,
     slidesPerView: 4,
     loop: false,
@@ -22,7 +22,7 @@ var galleryThumbs = new Swiper('#second-window .gallery-thumbs', {
     watchSlidesProgress: true,
 });
 
-var galleryTop = new Swiper('#second-window .gallery-top', {
+var galleryTop = new Swiper('#sneakers .gallery-top', {
     spaceBetween: 10,
     loop: false,
     navigation: {
@@ -51,7 +51,7 @@ $(document).ready(function() {
         }
     })
 
-    $('a[href^="#second-window"]').on('click', function(event) {
+    $('a[href^="#sneakers"]').on('click', function(event) {
         var sc = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(sc).offset().top

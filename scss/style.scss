@@ -2,7 +2,9 @@
 @import "base/fonts";
 @import "base/clearfix";
 
-@import "first-window/header";
-@import "first-window/main";
+@import "first-screen/header";
+@import "first-screen/main";
 
-@import "second-window/main";
+@import "sneakers/main";
+
+@import "./advantages/main";

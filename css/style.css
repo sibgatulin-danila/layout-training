@@ -82,7 +82,7 @@ ol, ul {
   padding-top: 11px;
   float: right; }
 
-#first-window {
+#first-screen {
   position: relative;
   z-index: 0;
   height: 733px;
@@ -91,35 +91,35 @@ ol, ul {
   padding-top: 209px;
   padding-left: 130px;
   padding-right: 150px; }
-  #first-window .slide {
+  #first-screen .slide {
     position: relative;
     top: 0;
     left: 0;
     width: 1140px;
     height: 450px;
     margin-left: 110px; }
-    #first-window .slide .text {
+    #first-screen .slide .text {
       margin-right: 199px;
       float: right;
       color: #fff; }
-      #first-window .slide .text .big-text {
+      #first-screen .slide .text .big-text {
         font-style: italic;
         text-transform: uppercase; }
-        #first-window .slide .text .big-text span:first-child {
+        #first-screen .slide .text .big-text span:first-child {
           font-family: Rubik;
           font-size: 72px;
           line-height: 85px;
           font-weight: bold; }
-        #first-window .slide .text .big-text span:last-child {
+        #first-screen .slide .text .big-text span:last-child {
           font-size: 48px;
           font-family: Rubik;
           line-height: 57px;
           font-weight: bold; }
-      #first-window .slide .text .small-text {
+      #first-screen .slide .text .small-text {
         font-family: Proxima Nova;
         font-size: 18px;
         line-height: 27px; }
-    #first-window .slide .button {
+    #first-screen .slide .button {
       font-size: 16px;
       font-family: Proxima Nova;
       line-height: 19px;
@@ -135,11 +135,11 @@ ol, ul {
       float: left;
       margin-top: 60px;
       cursor: pointer; }
-    #first-window .slide .sneaker {
+    #first-screen .slide .sneaker {
       height: 100%;
       float: left;
       padding-left: 10px; }
-      #first-window .slide .sneaker .ellipse {
+      #first-screen .slide .sneaker .ellipse {
         position: absolute;
         left: 30px;
         top: 10px;
@@ -147,12 +147,12 @@ ol, ul {
         height: 311px;
         border-radius: 300px;
         background-color: rgba(252, 228, 18, 0.94); }
-      #first-window .slide .sneaker img {
+      #first-screen .slide .sneaker img {
         position: absolute;
         width: 373px;
         height: 361px;
         transform: rotate(30deg); }
-      #first-window .slide .sneaker .add {
+      #first-screen .slide .sneaker .add {
         position: absolute;
         width: 42px;
         height: 42px;
@@ -162,46 +162,46 @@ ol, ul {
         bottom: 127px;
         left: 235px;
         cursor: pointer; }
-        #first-window .slide .sneaker .add .add-symbol {
+        #first-screen .slide .sneaker .add .add-symbol {
           font-size: 37px;
           font-weight: bold;
           color: #fff;
           margin: auto; }
-  #first-window .swiper-container {
+  #first-screen .swiper-container {
     height: 460px; }
-  #first-window .swiper-button {
+  #first-screen .swiper-button {
     color: #fff;
     width: 48px;
     height: 48px;
     top: 160px;
     border: 1px solid #fff;
     border-radius: 140px; }
-  #first-window .swiper-pagination-bullet {
+  #first-screen .swiper-pagination-bullet {
     width: 98px;
     height: 3px;
     background-color: #fff;
     opacity: 0.3;
     border-radius: 300px; }
-    #first-window .swiper-pagination-bullet-active {
+    #first-screen .swiper-pagination-bullet-active {
       background-color: #FCF312;
       opacity: 1;
       border-radius: 300px; }
-  #first-window .social-media {
+  #first-screen .social-media {
     position: absolute;
     right: 146px;
     bottom: 74px;
     z-index: 10; }
-    #first-window .social-media div {
+    #first-screen .social-media div {
       display: inline;
       vertical-align: middle;
       margin-left: 23px; }
-  #first-window .next-window {
+  #first-screen .next-window {
     width: 34px;
     height: 142px;
     position: absolute;
     bottom: 30px;
     z-index: 10; }
-    #first-window .next-window .text {
+    #first-screen .next-window .text {
       font-family: Proxima Nova;
       transform: rotate(-90deg);
       margin-bottom: 24px;
@@ -211,7 +211,7 @@ ol, ul {
       text-transform: uppercase;
       font-weight: bold;
       color: #fff; }
-    #first-window .next-window .arrow {
+    #first-screen .next-window .arrow {
       padding-top: 10px;
       /* position: absolute; */
       text-align: center;
@@ -227,16 +227,16 @@ ol, ul {
       box-sizing: border-box;
       border-radius: 600px; }
 
-#second-window {
+#sneakers {
   height: 788.9px;
   background-color: #fff;
   border-top: 0.1px solid #fff; }
-  #second-window .sneakers {
+  #sneakers .sneakers {
     width: 1165px;
     height: 638px;
     margin-top: 71px;
     margin-left: 128px; }
-    #second-window .sneakers .headline {
+    #sneakers .sneakers .headline {
       width: 1126px;
       height: 38px;
       font-family: Rubik;
@@ -245,19 +245,19 @@ ol, ul {
       font-size: 42px;
       line-height: 50px;
       color: #452A32; }
-    #second-window .sneakers .pinky-model {
+    #sneakers .sneakers .pinky-model {
       margin-top: 58px;
       width: 1163.8px;
       height: 541.8px;
       border: 0.1px solid #fff; }
-      #second-window .sneakers .pinky-model .tabs {
+      #sneakers .sneakers .pinky-model .tabs {
         width: 436px;
         height: 20px;
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 0;
         float: left; }
-        #second-window .sneakers .pinky-model .tabs .tab {
+        #sneakers .sneakers .pinky-model .tabs .tab {
           display: inline-block;
           font-size: 18px;
           line-height: 21px;
@@ -270,81 +270,81 @@ ol, ul {
           background-repeat: no-repeat;
           background-size: 100% 4px;
           cursor: pointer; }
-          #second-window .sneakers .pinky-model .tabs .tab-active, #second-window .sneakers .pinky-model .tabs .tab:hover {
+          #sneakers .sneakers .pinky-model .tabs .tab-active, #sneakers .sneakers .pinky-model .tabs .tab:hover {
             background-image: linear-gradient(to left, #FFC670 -58.54%, #FF6492 159.35%);
             color: #452A32; }
-          #second-window .sneakers .pinky-model .tabs .tab:last-child {
+          #sneakers .sneakers .pinky-model .tabs .tab:last-child {
             margin-right: 0; }
-      #second-window .sneakers .pinky-model .photo {
+      #sneakers .sneakers .pinky-model .photo {
         margin-top: 42px;
         width: 594px;
         height: 470px;
         margin-left: -10px;
         float: left; }
-      #second-window .sneakers .pinky-model .gallery-top {
+      #sneakers .sneakers .pinky-model .gallery-top {
         width: 594px;
         height: 360px; }
-        #second-window .sneakers .pinky-model .gallery-top .swiper-slide {
+        #sneakers .sneakers .pinky-model .gallery-top .swiper-slide {
           position: relative; }
-          #second-window .sneakers .pinky-model .gallery-top .swiper-slide:last-child > img {
+          #sneakers .sneakers .pinky-model .gallery-top .swiper-slide:last-child > img {
             bottom: -90px; }
-        #second-window .sneakers .pinky-model .gallery-top img {
+        #sneakers .sneakers .pinky-model .gallery-top img {
           right: 18.5px;
           position: absolute;
           width: 557px;
           bottom: 0;
           padding: auto; }
-      #second-window .sneakers .pinky-model .gallery-thumbs {
+      #sneakers .sneakers .pinky-model .gallery-thumbs {
         height: 96px;
         padding-top: 14px;
         width: 557px;
         background-color: #fff; }
-        #second-window .sneakers .pinky-model .gallery-thumbs .swiper-slide {
+        #sneakers .sneakers .pinky-model .gallery-thumbs .swiper-slide {
           position: relative;
           width: 144px;
           padding-right: 17px;
           height: 96px;
           opacity: 0.6;
           overflow: hidden; }
-          #second-window .sneakers .pinky-model .gallery-thumbs .swiper-slide:last-child > img {
+          #sneakers .sneakers .pinky-model .gallery-thumbs .swiper-slide:last-child > img {
             bottom: -20px; }
-          #second-window .sneakers .pinky-model .gallery-thumbs .swiper-slide-thumb-active {
+          #sneakers .sneakers .pinky-model .gallery-thumbs .swiper-slide-thumb-active {
             opacity: 1; }
-        #second-window .sneakers .pinky-model .gallery-thumbs img {
+        #sneakers .sneakers .pinky-model .gallery-thumbs img {
           position: absolute;
           width: 140px;
           bottom: 0; }
-      #second-window .sneakers .pinky-model .swiper-button {
+      #sneakers .sneakers .pinky-model .swiper-button {
         border: 0;
         background-color: #FF6492;
         width: 40px;
         height: 40px;
         border-radius: 140px; }
-        #second-window .sneakers .pinky-model .swiper-button-next {
+        #sneakers .sneakers .pinky-model .swiper-button-next {
           right: 0; }
-        #second-window .sneakers .pinky-model .swiper-button-prev {
+        #sneakers .sneakers .pinky-model .swiper-button-prev {
           left: 0; }
-      #second-window .sneakers .pinky-model .info {
+      #sneakers .sneakers .pinky-model .info {
         width: 459px;
         height: 496px;
         margin-left: 111px;
         margin-top: -30px;
         float: right; }
-        #second-window .sneakers .pinky-model .info h1 {
+        #sneakers .sneakers .pinky-model .info h1 {
           font-size: 32px;
           line-height: 38px;
           color: #452A32;
           font-family: Rubik;
           font-weight: normal;
           margin-bottom: 24px; }
-        #second-window .sneakers .pinky-model .info p {
+        #sneakers .sneakers .pinky-model .info p {
           font-size: 16px;
           line-height: 23px;
           color: #917D83;
           font-family: Roboto;
           font-weight: normal;
           opacity: 0.9; }
-      #second-window .sneakers .pinky-model #dd-size {
+      #sneakers .sneakers .pinky-model #dd-size {
         margin-top: 40px;
         width: 226px;
         height: 44px;
@@ -361,58 +361,58 @@ ol, ul {
         padding-top: 13px;
         background-color: #fff;
         cursor: pointer; }
-        #second-window .sneakers .pinky-model #dd-size > .arrow {
+        #sneakers .sneakers .pinky-model #dd-size > .arrow {
           position: absolute;
           color: #917D83;
           font-size: 30px;
           display: inline; }
-          #second-window .sneakers .pinky-model #dd-size > .arrow-down {
+          #sneakers .sneakers .pinky-model #dd-size > .arrow-down {
             transform: rotate(90deg);
             right: 20px; }
-          #second-window .sneakers .pinky-model #dd-size > .arrow-up {
+          #sneakers .sneakers .pinky-model #dd-size > .arrow-up {
             transform: rotate(270deg);
             right: 25px; }
-        #second-window .sneakers .pinky-model #dd-size .dropdown li {
+        #sneakers .sneakers .pinky-model #dd-size .dropdown li {
           width: 170px;
           padding: 10px; }
-        #second-window .sneakers .pinky-model #dd-size .drop {
+        #sneakers .sneakers .pinky-model #dd-size .drop {
           position: absolute;
           top: 45px;
           left: 25px;
           visibility: visible; }
-          #second-window .sneakers .pinky-model #dd-size .drop li:hover {
+          #sneakers .sneakers .pinky-model #dd-size .drop li:hover {
             background: #bebebe;
             border-radius: 10px; }
-          #second-window .sneakers .pinky-model #dd-size .drop-off {
+          #sneakers .sneakers .pinky-model #dd-size .drop-off {
             position: absolute;
             visibility: hidden; }
-      #second-window .sneakers .pinky-model .prices {
+      #sneakers .sneakers .pinky-model .prices {
         margin-top: 125px;
         font-family: Rubik;
         font-weight: normal; }
-        #second-window .sneakers .pinky-model .prices span:first-child {
+        #sneakers .sneakers .pinky-model .prices span:first-child {
           color: #FF6492;
           font-size: 24px;
           line-height: 28px; }
-        #second-window .sneakers .pinky-model .prices span:nth-child(2) {
+        #sneakers .sneakers .pinky-model .prices span:nth-child(2) {
           color: #FF6492;
           margin-left: 6px;
           font-size: 16px;
           line-height: 18.96px;
           vertical-align: top; }
-        #second-window .sneakers .pinky-model .prices span:nth-child(3) {
+        #sneakers .sneakers .pinky-model .prices span:nth-child(3) {
           color: #BEBEBE;
           margin-left: 18px;
           font-size: 20px;
           line-height: 24px;
           vertical-align: top; }
-        #second-window .sneakers .pinky-model .prices span:nth-child(4) {
+        #sneakers .sneakers .pinky-model .prices span:nth-child(4) {
           color: #BEBEBE;
           margin-left: 6px;
           font-size: 16px;
           line-height: 18.96px;
           vertical-align: top; }
-        #second-window .sneakers .pinky-model .prices .line {
+        #sneakers .sneakers .pinky-model .prices .line {
           position: relative;
           display: inline-block;
           right: 70px;
@@ -421,7 +421,7 @@ ol, ul {
           height: 2px;
           border: 1.9px solid #BEBEBE;
           transform: matrix(0.99, -0.14, 0.13, 0.99, 0, 0); }
-      #second-window .sneakers .pinky-model .button {
+      #sneakers .sneakers .pinky-model .button {
         width: 226px;
         height: 44px;
         margin-top: 32px;
@@ -436,5 +436,56 @@ ol, ul {
         font-weight: normal;
         font-size: 16px;
         line-height: 23px; }
+
+#advantages {
+  background: #F9F9F9;
+  width: 100%;
+  height: 541.9px;
+  border: 0.1px solid #F9F9F9; }
+  #advantages .headline {
+    margin: 106px;
+    text-align: center; }
+    #advantages .headline p {
+      font-family: Rubik;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 50px;
+      color: #452A32; }
+  #advantages .advantages {
+    width: 1050px;
+    height: 205px;
+    margin-top: 88px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between; }
+    #advantages .advantages .advantage {
+      text-align: center; }
+      #advantages .advantages .advantage .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 33px;
+        width: 98px;
+        height: 98px;
+        border-radius: 98px;
+        background: linear-gradient(125.58deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
+        transform: matrix(-1, 0, 0, 1, 0, 0); }
+        #advantages .advantages .advantage .img .img-wrapper {
+          position: relative;
+          right: 1px; }
+      #advantages .advantages .advantage .content h2 {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #452A32; }
+      #advantages .advantages .advantage .content p {
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: #917D83;
+        opacity: 0.9; }
 
 /*# sourceMappingURL=style.css.map */
