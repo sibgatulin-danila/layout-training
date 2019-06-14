@@ -625,4 +625,40 @@ ol, ul {
       line-height: 23px;
       color: #fff; }
 
+#contacts {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  height: 433px;
+  border: 0.1px solid black;
+  background-color: #24303E;
+  color: #fff;
+  font-family: Proxima Nova;
+  font-style: normal; }
+  #contacts .info {
+    margin: 64px; }
+    #contacts .info .phone {
+      font-size: 24px;
+      line-height: 29px; }
+    #contacts .info .mail, #contacts .info .address {
+      font-size: 16px;
+      line-height: 19px;
+      margin-top: 16px; }
+    #contacts .info .address {
+      margin-top: 32px; }
+    #contacts .info .social-media {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 64px; }
+      #contacts .info .social-media div {
+        margin: 0 35px 0 0; }
+        #contacts .info .social-media div svg:last-child {
+          margin: 0; }
+    #contacts .info .developer {
+      position: absolute;
+      bottom: 64px;
+      color: #607894; }
+
 /*# sourceMappingURL=style.css.map */
