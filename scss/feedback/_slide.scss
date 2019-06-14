@@ -20,5 +20,19 @@
 
     .author-feedback {
         width: 462px;
+        .author-name{
+            font-family: Rubik;
+            font-size: 20px;
+            line-height: 24px;
+            color: #452A32;
+        }
+        p{
+            margin-top: 16px;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 23px;
+            color: #917D83;
+            opacity: .9;
+        }
     }
 }
