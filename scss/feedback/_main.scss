@@ -1,0 +1,21 @@
+#feedback {
+    height: 470px;
+    width: 1439.9px;
+    border: 0.1px solid #fff;
+    background: #fff;
+
+    .headline {
+        margin-top: 72px;
+        display: flex;
+        justify-content: center;
+
+        p {
+            font-family: Rubik;
+            font-size: 42px;
+            line-height: 50px;
+            color: #452A32;
+        }
+    }
+
+    @import "slider";
+}

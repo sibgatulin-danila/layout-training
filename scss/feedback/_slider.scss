@@ -1,0 +1,39 @@
+.swiper-container {
+    width: 1440px-300;
+    height: 282px;
+
+    .swiper-wrapper {
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            @import "slide";
+        }
+    }
+
+    .swiper-button {
+        background-color: #fff;
+        border: 1px solid rgba(255, 100, 146, 0.61);
+        color: rgba(255, 100, 146, 0.61);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: 53px;
+        height: 3px;
+        background-color: #FF6492;
+        opacity: 0.3;
+        border-radius: 300px;
+
+        &-active {
+            background-color: #FF6492;
+            opacity: 1;
+            border-radius: 600px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .author-photo {
+        margin-right: 42px;
+        width: 167px;
+        height: 167px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 167px;
+            height: 167px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .author-feedback {
+        width: 462px;
+    }
+}
