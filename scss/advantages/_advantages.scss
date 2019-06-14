@@ -21,7 +21,15 @@
             background: linear-gradient(125.58deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
             transform: matrix(-1, 0, 0, 1, 0, 0);
 
-            & .img-wrapper {
+            svg{
+                transform: scale(-1, 1);
+            }
+
+            &:first-child .img-wrapper {
+                position: relative;
+                right: 1px;
+            }
+            &:nth-child(3) .img-wrapper {
                 position: relative;
                 right: 1px;
             }
