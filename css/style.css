@@ -458,21 +458,21 @@ ol, ul {
     margin-right: auto;
     display: flex;
     justify-content: space-between; }
-    #advantages .advantages .advantage {
+    #advantages .advantages .advantage .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 33px;
+      width: 98px;
+      height: 98px;
+      border-radius: 98px;
+      background: linear-gradient(125.58deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
+      transform: matrix(-1, 0, 0, 1, 0, 0); }
+      #advantages .advantages .advantage .img .img-wrapper {
+        position: relative;
+        right: 1px; }
+    #advantages .advantages .advantage .content {
       text-align: center; }
-      #advantages .advantages .advantage .img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto 33px;
-        width: 98px;
-        height: 98px;
-        border-radius: 98px;
-        background: linear-gradient(125.58deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
-        transform: matrix(-1, 0, 0, 1, 0, 0); }
-        #advantages .advantages .advantage .img .img-wrapper {
-          position: relative;
-          right: 1px; }
       #advantages .advantages .advantage .content h2 {
         font-family: Rubik;
         font-size: 20px;

@@ -8,7 +8,7 @@
     justify-content: space-between;
 
     & .advantage {
-        text-align: center;
+
 
         & .img {
             display: flex;
@@ -28,6 +28,7 @@
         }
 
         & .content {
+            text-align: center;
             & h2 {
                 font-family: Rubik;
                 // font-weight: 500;
