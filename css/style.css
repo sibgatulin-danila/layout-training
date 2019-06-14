@@ -163,15 +163,16 @@ ol, ul {
         height: 42px;
         border-radius: 30px;
         background-color: #E87747;
-        display: flex;
         bottom: 127px;
         left: 235px;
-        cursor: pointer; }
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
         #first-screen .slide .sneaker .add .add-symbol {
           font-size: 37px;
           font-weight: bold;
-          color: #fff;
-          margin: auto; }
+          color: #fff; }
   #first-screen .swiper-container {
     height: 460px; }
   #first-screen .swiper-button {
