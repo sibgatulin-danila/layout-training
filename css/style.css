@@ -36,6 +36,11 @@ ol, ul {
   font-style: normal; }
 @font-face {
   font-family: 'Rubik';
+  src: url("../res/Rubik-Medium.ttf");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Rubik';
   src: url("../res/Rubik-Regular.eot");
   src: local("Rubik"), local("Rubik-Regular"), url("../res/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("../res/Rubik-Regular.woff") format("woff"), url("../res/Rubik-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -446,6 +451,7 @@ ol, ul {
     text-align: center; }
     #advantages .headline p {
       font-family: Rubik;
+      font-weight: 500;
       font-size: 42px;
       line-height: 50px;
       color: #452A32; }
@@ -501,6 +507,7 @@ ol, ul {
     justify-content: center; }
     #feedback .headline p {
       font-family: Rubik;
+      font-weight: 500;
       font-size: 42px;
       line-height: 50px;
       color: #452A32; }
@@ -530,6 +537,7 @@ ol, ul {
           #feedback .swiper-container .swiper-wrapper .swiper-slide .slide .author-feedback .author-name {
             font-family: Rubik;
             font-size: 20px;
+            font-weight: 500;
             line-height: 24px;
             color: #452A32; }
           #feedback .swiper-container .swiper-wrapper .swiper-slide .slide .author-feedback p {
@@ -571,6 +579,7 @@ ol, ul {
     #pay-and-delivery .headline p {
       font-family: Rubik;
       font-size: 42px;
+      font-weight: 500;
       line-height: 50px;
       color: #452A32; }
   #pay-and-delivery .buy-process {
