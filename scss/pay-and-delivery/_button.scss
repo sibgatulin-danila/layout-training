@@ -1,0 +1,19 @@
+.button {
+    margin: 72px auto 0;
+    border: 0.1px solid rgba(0,0,0,0);
+    width: 266px;
+    height: 44px;
+    background: linear-gradient(270deg, #FFAC70 0%, #FF6492 100%);
+    border-radius: 600px;
+    box-shadow: 0 16px 30px rgba(255, 100, 146, 0.2);
+    cursor: pointer;
+
+    p {
+        text-align: center;
+        margin: 10px auto;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 23px;
+        color: #fff;
+    }
+}

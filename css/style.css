@@ -491,8 +491,8 @@ ol, ul {
         opacity: 0.9; }
 
 #feedback {
-  height: 470px;
-  width: 1439.9px;
+  height: 469.9px;
+  width: 100%;
   border: 0.1px solid #fff;
   background: #fff; }
   #feedback .headline {
@@ -558,5 +558,71 @@ ol, ul {
         background-color: #FF6492;
         opacity: 1;
         border-radius: 600px; }
+
+#pay-and-delivery {
+  height: 535.9px;
+  weight: 100%;
+  background-color: #F9F9F9;
+  border: 0.1px solid #F9F9F9; }
+  #pay-and-delivery .headline {
+    display: flex;
+    justify-content: center;
+    margin-top: 72px; }
+    #pay-and-delivery .headline p {
+      font-family: Rubik;
+      font-size: 42px;
+      line-height: 50px;
+      color: #452A32; }
+  #pay-and-delivery .buy-process {
+    margin: 52px;
+    height: 181px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+    #pay-and-delivery .buy-process .stage {
+      padding: 0 43.5px;
+      text-align: center; }
+      #pay-and-delivery .buy-process .stage .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 95.8px;
+        height: 98px;
+        background: linear-gradient(124.96deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        border-radius: 50%; }
+        #pay-and-delivery .buy-process .stage .img svg {
+          transform: scale(-1, 1); }
+      #pay-and-delivery .buy-process .stage .description {
+        margin-top: 24px; }
+        #pay-and-delivery .buy-process .stage .description p {
+          font-family: Roboto;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          color: #000; }
+    #pay-and-delivery .buy-process .arrow {
+      padding-top: 20px;
+      width: 15px;
+      height: 24px;
+      font-size: 47px;
+      color: rgba(255, 100, 109, 0.81); }
+  #pay-and-delivery .button {
+    margin: 72px auto 0;
+    border: 0.1px solid rgba(0, 0, 0, 0);
+    width: 266px;
+    height: 44px;
+    background: linear-gradient(270deg, #FFAC70 0%, #FF6492 100%);
+    border-radius: 600px;
+    box-shadow: 0 16px 30px rgba(255, 100, 146, 0.2);
+    cursor: pointer; }
+    #pay-and-delivery .button p {
+      text-align: center;
+      margin: 10px auto;
+      font-family: Roboto;
+      font-size: 16px;
+      line-height: 23px;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

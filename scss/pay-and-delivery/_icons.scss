@@ -1,0 +1,47 @@
+.buy-process {
+    margin: 52px;
+    height: 181px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .stage {
+        padding:0 43.5px;
+        text-align: center;
+
+        .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 95.8px;
+            height: 98px;
+            background: linear-gradient(124.96deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            border-radius: 50%;
+            svg{
+                transform: scale(-1, 1);
+            }
+        }
+
+        .description {
+            margin-top: 24px;
+
+            p {
+                font-family: Roboto;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: #000;
+            }
+        }
+    }
+
+    .arrow {
+        padding-top: 20px;
+        width: 15px;
+        height: 24px;
+        font-size: 47px;
+        color: rgba(255, 100, 109, 0.81);
+    }
+}
