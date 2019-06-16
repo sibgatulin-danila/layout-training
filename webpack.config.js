@@ -2,9 +2,6 @@ let path = require('path');
 let ExtractTextPlugin = require("extract-text-webpack-plugin");
 let copyWebpackPlugin = require('copy-webpack-plugin');
 
-
-
-
 let conf = {
 
     entry: ['./src/index.js',
