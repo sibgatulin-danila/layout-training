@@ -801,7 +801,15 @@ ol, ul {
     height: 48px;
     top: 160px;
     border: 1px solid #fff;
-    border-radius: 140px; }
+    border-radius: 140px;
+    background-image: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #first-screen .swiper-button p {
+      position: absolute;
+      font-size: 35px;
+      top: 0px; }
   #first-screen .swiper-pagination-bullet {
     width: 98px;
     height: 3px;
@@ -944,7 +952,16 @@ ol, ul {
         background-color: #FF6492;
         width: 40px;
         height: 40px;
-        border-radius: 140px; }
+        border-radius: 140px;
+        background-image: none !important;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #sneakers .sneakers .pinky-model .swiper-button p {
+          position: absolute;
+          color: #fff;
+          font-size: 35px;
+          top: -3px; }
         #sneakers .sneakers .pinky-model .swiper-button-next {
           right: 0; }
         #sneakers .sneakers .pinky-model .swiper-button-prev {
@@ -1169,12 +1186,21 @@ ol, ul {
             color: #917D83;
             opacity: .9; }
     #feedback .swiper-container .swiper-button {
-      background-color: #fff;
+      background-color: rgba(0, 0, 0, 0);
       border: 1px solid rgba(255, 100, 146, 0.61);
       color: rgba(255, 100, 146, 0.61);
       width: 48px;
       height: 48px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      background-image: none !important;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #feedback .swiper-container .swiper-button p {
+        color: rgba(255, 100, 146, 0.61);
+        position: absolute;
+        font-size: 35px;
+        top: 0px; }
     #feedback .swiper-container .swiper-pagination {
       bottom: 0; }
     #feedback .swiper-container .swiper-pagination-bullet {
