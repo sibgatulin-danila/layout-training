@@ -2,6 +2,8 @@ import Swiper from 'swiper';
 import 'swiper/dist/css/swiper.css';
 import $ from 'jquery';
 
+
+
 $(document).ready(function() {
     $('#dd-size').click(function() {
         if (this.className == 'disabled') {

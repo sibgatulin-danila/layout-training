@@ -11,12 +11,22 @@
     }
 
     .swiper-button {
-        background-color: #fff;
+        background-color: rgba(0,0,0,0);
         border: 1px solid rgba(255, 100, 146, 0.61);
         color: rgba(255, 100, 146, 0.61);
         width: 48px;
         height: 48px;
         border-radius: 50%;
+        background-image: none !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: rgba(255, 100, 146, 0.61);
+            position:absolute;
+            font-size: 35px;
+            top: 0px;
+        }
     }
 
     .swiper-pagination {

@@ -22,7 +22,11 @@ let conf = {
     },
 
     module: {
-        rules: [{
+        rules: [
+        {
+            test: /\.html$/,
+            loader: 'html-loader'
+        },{
             test: /\.js$/,
             loader: 'babel-loader',
         }, {
