@@ -44,11 +44,7 @@ $(document).ready(function() {
 
     });
 
-    mySwiper.myfunc = function() {
-        console.log("huy");
-    };
-
-    mySwiper.myfunc();
+    
 
 
     var mySwiper2 = new Swiper('#feedback .swiper-container', {
