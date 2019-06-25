@@ -1,16 +1,23 @@
 #header {
+    margin-top: 32px;
+    height: 40px;
     font-family: Proxima Nova;
     line-height: 19px;
-    position: absolute;
-    width: 1150px;
-    top: 32px;
-    left: 146px;
+    position: block;
+    max-width: 1150px;
+    width: 100%;
     color: #fff;
-    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .header__menu {
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        @include media(0, 450px){
+            margin-right: 0;
+        }
         & li {
             float: left;
             margin-right: 40px;
@@ -20,12 +27,25 @@
             a {
                 font-size: 16px;
                 color: #fff;
+                @include media(0, $mediaSM) {
+                    font-size: 12px;
+                }
             }
         }
     }
     .header__contact {
+        text-align: center;
         font-size: 16px;
         font-weight: bold;   
+        width: 145px;
+        @include media(0, $mediaSM) {
+            font-size: 12px;
+        }
+    }
+    @include media(0, 450px){
+        flex-direction: column;
+        height: 150px;
+        margin-top: 10px; 
     }
 }
 

@@ -1,43 +1,69 @@
 .slide__sneaker {
-    height: 100%;
-    float: left;
-    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 100px;
 
     .slide__sneaker-ellipse {
         position: absolute;
-        left: 30px;
-        top: 10px;
-        width: 304px;
-        height: 311px;
-        border-radius: 300px;
-        background-color: rgba(252, 228, 18, 0.94);
+        @include size(330px);
+        background-color: rgba(252, 228, 18, .94);
+        border-radius: 50%;
     }
 
     .slide__sneaker-img {
-        position: absolute;
+        padding-top: 30px;
+        transform: rotate(30deg);
         width: 373px;
         height: 361px;
-        transform: rotate(30deg);
     }
 
     .slide__sneaker-add-button {
-        position: absolute;
         width: 42px;
         height: 42px;
-        border-radius: 30px;
-        background-color: #E87747;
-        bottom: 127px;
-        left: 235px;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        border-radius: 50%;
+        background-color: #e87747;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        right: 80px;
+        bottom: 20px;
 
-        .slide__sneaker-add-symbol {
-            font-size: 37px;
-            font-weight: bold;
+        p {
+            font-size: 38px;
             color: #fff;
-            // margin: auto;
+            font-weight: 700
+        }
+    }
+    @include media(0, 1083px){
+        margin-right: 70px;
+        .slide__sneaker-add-button{
+            @include size(37px);
+            p{
+                font-size: 33px;
+            }
+        }
+        .slide__sneaker-img { 
+            @include size( 330px, 361px - 43);
+        }
+        .slide__sneaker-ellipse{
+            @include size(300px);
+        }
+    }
+    @include media(0, 830px){
+        margin-right: 40px;
+        .slide__sneaker-add-button{
+            @include size(33px);
+            p{
+                font-size: 29px;
+            }
+        }
+        .slide__sneaker-img { 
+            @include size( 290px, 290px - 43);
+        }
+        .slide__sneaker-ellipse{
+            @include size(250px);
         }
     }
 }

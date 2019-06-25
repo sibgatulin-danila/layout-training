@@ -1,8 +1,10 @@
 @import "./base/_base.scss";
 @import "./base/_fonts.scss";
 @import "./base/_clearfix.scss";
+@import "./base/_vars.scss";
+@import "./base/_media.scss";
+@import "./base/_mixin.scss";
 
-@import "./first-screen/_header.scss";
 @import "./first-screen/_main.scss";
 
 @import "./sneakers/_main.scss";

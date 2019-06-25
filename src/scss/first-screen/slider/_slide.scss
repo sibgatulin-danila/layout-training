@@ -1,59 +1,126 @@
 .slide {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 1140px;
-    height: 450px;
-    margin-left: 110px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1005px;
+    width: 100%;
+    justify-content: center;
 
     .slide__text {
-        margin-right: 199px;
-        float: right;
         color: #fff;
 
         .slide__headline {
             font-style: italic;
             text-transform: uppercase;
+            font-family: Rubik;
+            font-weight: 700;
 
             span:first-child {
-                font-family: Rubik;
                 font-size: 72px;
                 line-height: 85px;
-                font-weight: bold;
+
+                @include media(0, 1083px) {
+                    $mainWidth: 60px;
+                    font-size: $mainWidth;
+                    line-height: $mainWidth + 13;
+                }
+                @include media(0, 830px){
+                    $mainWidth: 50px;
+                    font-size: $mainWidth;
+                    line-height: $mainWidth + 13;
+                }
             }
 
             span:last-child {
+
                 font-size: 48px;
-                font-family: Rubik;
                 line-height: 57px;
-                font-weight: bold;
+
+                @include media(0, 1083px) {
+                    font-size: 38px;
+                    line-height: 38px + 9;
+                }
+                @include media(0, 830px){
+                    $mainWidth: 30px;
+                    font-size: $mainWidth;
+                    line-height: $mainWidth + 9;
+                }
             }
         }
 
         .slide__description {
+            margin-top: 30px;
+            max-width: 350px;
             font-family: Proxima Nova;
             font-size: 18px;
             line-height: 27px;
+            font-weight: 600;
+            @include media(0, 830px){
+                $mainWidth: 12px;
+                font-size: $mainWidth;
+                line-height: $mainWidth + 9;
+            }
         }
     }
 
-    .slide__button {
-        font-size: 16px;
-        font-family: Proxima Nova;
-        line-height: 19px;
-        text-align: center;
-        color: #AF3838;
-        width: 180px;
-        height: 40px;
-        background-color: rgba(255, 245, 4, 0.93);
-        box-shadow: 0 4px 20px rgba(130, 22, 22, 0.2);
-        border-radius: 300px;
-        padding-top: 10px;
-        font-weight: bold;
-        float: left;
-        margin-top: 60px;
-        cursor: pointer;
+    .slide__buttons {
+        display: flex;
+        margin-top: 64px;
+        justify-content: flex-start;
+
+        .slide__button {
+            display: flex;
+            width: 180px;
+            height: 40px;
+            background: rgba(255, 245, 4, .93);
+            box-shadow: 0 4px 20px rgba(130, 22, 22, .2);
+            border-radius: 600px;
+            p {
+                text-align: center;
+                margin: auto;
+                font-family: Proxima Nova;
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 600;
+                color: #af3838
+            }
+        }
+        .slide__button_add{
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background-color: #e87747;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background-color: #e87747;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            p {
+                margin: 0;
+                font-size: 30px;
+                color: #fff;
+                font-weight: 600
+            }   
+        }
     }
 
     @import "sneaker";
+
+    @include media(0, 650px){
+        flex-direction: column;
+        
+        text-align: center;
+        .slide__description{
+            margin: 0 auto;
+        }
+        .slide__sneaker{
+            margin: 0 auto;
+            .slide__sneaker-add-button{
+                display: none;
+            }
+        }
+        heigth: 800px;
+    }
 }

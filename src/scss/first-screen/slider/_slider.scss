@@ -2,7 +2,15 @@
 
 .swiper-container {
     height: 460px;
+    max-width: 1150px;
+    
+    @include media(0, 650px){
+        height: 600px;
+    }
+
 }
+
+
 
 .swiper-button {
     color: #fff;
