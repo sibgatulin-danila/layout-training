@@ -1,4 +1,4 @@
-.tabs {
+.sneakers__tabs {
     width: 436px;
     height: 20px;
     margin-top: 10px;
@@ -6,7 +6,7 @@
     margin-right: 0;
     float: left;
 
-    .tab {
+    .sneakers__tab {
         display: inline-block;
         font-size: 18px;
         line-height: 21px;
@@ -20,7 +20,7 @@
         background-size: 100% 4px;
         cursor: pointer;
 
-        &-active,
+        &_active,
         &:hover {
             background-image: linear-gradient(to left, #FFC670 -58.54%, #FF6492 159.35%);
             color: #452A32;

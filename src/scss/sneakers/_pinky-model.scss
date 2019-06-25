@@ -1,6 +1,6 @@
 @import "tabs";
 
-.photo {
+.sneakers__photo {
     margin-top: 42px;
     width: 594px;
     height: 470px;
@@ -9,7 +9,7 @@
 }
 @import "gallery";
 
-.info {
+.sneakers__info {
     width: 459px;
     height: 496px;
     margin-left: 111px;
@@ -36,7 +36,7 @@
 }
 @import "dropdown-button";
 
-.prices {
+.sneakers__prices {
     margin-top: 125px;
     font-family: Rubik;
     font-weight: normal;
@@ -85,7 +85,7 @@
     }
 }
 
-.button {
+.sneakers__button {
     width: 226px;
     height: 44px;
     margin-top: 32px;

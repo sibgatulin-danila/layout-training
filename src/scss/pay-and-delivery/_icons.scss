@@ -1,11 +1,11 @@
-.buy-process {
+.pay-and-delivery__buy-process {
     margin: 52px;
     height: 181px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
-    .stage {
+    .pay-and-delivery__buy-process-stage {
         padding:0 43.5px;
         text-align: center;
 
@@ -24,7 +24,7 @@
             }
         }
 
-        .description {
+        .pay-and-delivery__buy-process-description {
             margin-top: 24px;
 
             p {
@@ -37,7 +37,7 @@
         }
     }
 
-    .arrow {
+    .pay-and-delivery__buy-process-arrow {
         padding-top: 20px;
         width: 15px;
         height: 24px;

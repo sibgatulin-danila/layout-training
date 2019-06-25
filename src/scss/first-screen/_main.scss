@@ -23,14 +23,14 @@
         }
     }
 
-    .next-window {
+    .scroll-down {
         width: 34px;
         height: 142px;
         position: absolute;
         bottom: 30px;
         z-index: 10;
 
-        .text {
+        .scroll-down__text {
             font-family: Proxima Nova;
             transform: rotate(-90deg);
             margin-bottom: 24px;
@@ -42,7 +42,7 @@
             color: #fff;
         }
 
-        .arrow {
+        .scroll-down__arrow {
             padding-top: 10px;
             text-align: center;
             vertical-align: bottom;

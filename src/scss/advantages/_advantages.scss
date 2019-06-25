@@ -7,10 +7,10 @@
     display: flex;
     justify-content: space-between;
 
-    & .advantage {
+    & .advantages__advantage {
 
 
-        & .img {
+        & .advantages__advantage-img {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,17 +25,17 @@
                 transform: scale(-1, 1);
             }
 
-            &:first-child .img-wrapper {
+            &:first-child .advantages__advantage-img-wrapper {
                 position: relative;
                 right: 1px;
             }
-            &:nth-child(3) .img-wrapper {
+            &:nth-child(3) .advantages__advantage-img-wrapper {
                 position: relative;
                 right: 1px;
             }
         }
 
-        & .content {
+        & .advantages__advantage-content {
             text-align: center;
             & h2 {
                 font-family: Rubik;

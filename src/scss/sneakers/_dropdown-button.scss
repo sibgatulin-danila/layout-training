@@ -1,4 +1,4 @@
-#dd-size {
+.sneakers__dd-button {
     margin-top: 40px;
     width: 226px;
     height: 44px;
@@ -22,23 +22,23 @@
         font-size: 30px;
         display: inline;
 
-        &-down {
+        &_down {
             transform: rotate(90deg);
             right: 20px;
         }
 
-        &-up {
+        &_up {
             transform: rotate(270deg);
             right: 25px;
         }
     }
 
-    .dropdown li {
+    .dd-button__dropdown li {
         width: 170px;
         padding: 10px;
     }
 
-    .drop {
+    .dd-button__dropdown_on {
         position: absolute;
         top: 45px;
         left: 25px;
@@ -49,9 +49,9 @@
             border-radius: 10px;
         }
 
-        &-off {
-            position: absolute;
-            visibility: hidden;
-        }
+    }
+    .dd-button__dropdown_off {
+        position: absolute;
+        visibility: hidden;
     }
 }

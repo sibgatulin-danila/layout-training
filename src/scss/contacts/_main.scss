@@ -1,4 +1,4 @@
-#contacts{
+.contacts{
     display: flex;
     justify-content: flex-start;
     position: relative;
@@ -8,21 +8,21 @@
     color: #fff;
     font-family: Proxima Nova;
     font-style: normal;
-    .info{
+    .contacts__info{
         margin: 64px;
-        .phone{
+        .contacts__phone{
             font-size: 24px;
             line-height: 29px;
         }
-        .mail, .address{
+        .contacts__mail, .contacts__address{
             font-size: 16px;
             line-height: 19px;
             margin-top: 16px;
         }
-        .address{
+        .contacts__address{
             margin-top: 32px;
         }
-        .social-media{
+        .contacts__social-media{
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -34,7 +34,7 @@
                 }
             }
         }
-        .developer{
+        .contacts__developer{
             position:absolute;
             bottom: 64px;
             color: #607894;

@@ -658,6 +658,12 @@ ol, ul {
   font-style: normal; }
 
 @font-face {
+  font-family: 'Roboto';
+  src: url("../res/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Rubik';
   src: url("../res/Rubik-Regular.eot");
   src: local("Rubik"), local("Rubik-Regular"), url("../res/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("../res/Rubik-Regular.woff") format("woff"), url("../res/Rubik-Regular.ttf") format("truetype");
@@ -679,33 +685,21 @@ ol, ul {
   top: 32px;
   left: 146px;
   color: #fff;
-  z-index: 10; }
-  #header .container {
-    width: 1150px;
-    height: 40px; }
-
-.logo {
-  float: left;
-  margin-top: 0; }
-
-.menu {
-  padding-top: 11px;
-  float: left;
-  margin-left: 224px; }
-  .menu li {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #header .header__menu li {
     float: left;
     margin-right: 40px; }
-    .menu li:last-child {
+    #header .header__menu li:last-child {
       margin-right: 0; }
-    .menu li a {
+    #header .header__menu li a {
       font-size: 16px;
       color: #fff; }
-
-.contact {
-  font-size: 16px;
-  font-weight: bold;
-  padding-top: 11px;
-  float: right; }
+  #header .header__contact {
+    font-size: 16px;
+    font-weight: bold; }
 
 #first-screen {
   position: relative;
@@ -723,28 +717,28 @@ ol, ul {
     width: 1140px;
     height: 450px;
     margin-left: 110px; }
-    #first-screen .slide .text {
+    #first-screen .slide .slide__text {
       margin-right: 199px;
       float: right;
       color: #fff; }
-      #first-screen .slide .text .big-text {
+      #first-screen .slide .slide__text .slide__headline {
         font-style: italic;
         text-transform: uppercase; }
-        #first-screen .slide .text .big-text span:first-child {
+        #first-screen .slide .slide__text .slide__headline span:first-child {
           font-family: Rubik;
           font-size: 72px;
           line-height: 85px;
           font-weight: bold; }
-        #first-screen .slide .text .big-text span:last-child {
+        #first-screen .slide .slide__text .slide__headline span:last-child {
           font-size: 48px;
           font-family: Rubik;
           line-height: 57px;
           font-weight: bold; }
-      #first-screen .slide .text .small-text {
+      #first-screen .slide .slide__text .slide__description {
         font-family: Proxima Nova;
         font-size: 18px;
         line-height: 27px; }
-    #first-screen .slide .button {
+    #first-screen .slide .slide__button {
       font-size: 16px;
       font-family: Proxima Nova;
       line-height: 19px;
@@ -760,11 +754,11 @@ ol, ul {
       float: left;
       margin-top: 60px;
       cursor: pointer; }
-    #first-screen .slide .sneaker {
+    #first-screen .slide .slide__sneaker {
       height: 100%;
       float: left;
       padding-left: 10px; }
-      #first-screen .slide .sneaker .ellipse {
+      #first-screen .slide .slide__sneaker .slide__sneaker-ellipse {
         position: absolute;
         left: 30px;
         top: 10px;
@@ -772,12 +766,12 @@ ol, ul {
         height: 311px;
         border-radius: 300px;
         background-color: rgba(252, 228, 18, 0.94); }
-      #first-screen .slide .sneaker img {
+      #first-screen .slide .slide__sneaker .slide__sneaker-img {
         position: absolute;
         width: 373px;
         height: 361px;
         transform: rotate(30deg); }
-      #first-screen .slide .sneaker .add {
+      #first-screen .slide .slide__sneaker .slide__sneaker-add-button {
         position: absolute;
         width: 42px;
         height: 42px;
@@ -789,7 +783,7 @@ ol, ul {
         display: flex;
         justify-content: center;
         align-items: center; }
-        #first-screen .slide .sneaker .add .add-symbol {
+        #first-screen .slide .slide__sneaker .slide__sneaker-add-button .slide__sneaker-add-symbol {
           font-size: 37px;
           font-weight: bold;
           color: #fff; }
@@ -829,13 +823,13 @@ ol, ul {
       display: inline;
       vertical-align: middle;
       margin-left: 23px; }
-  #first-screen .next-window {
+  #first-screen .scroll-down {
     width: 34px;
     height: 142px;
     position: absolute;
     bottom: 30px;
     z-index: 10; }
-    #first-screen .next-window .text {
+    #first-screen .scroll-down .scroll-down__text {
       font-family: Proxima Nova;
       transform: rotate(-90deg);
       margin-bottom: 24px;
@@ -845,7 +839,7 @@ ol, ul {
       text-transform: uppercase;
       font-weight: bold;
       color: #fff; }
-    #first-screen .next-window .arrow {
+    #first-screen .scroll-down .scroll-down__arrow {
       padding-top: 10px;
       text-align: center;
       vertical-align: bottom;
@@ -869,7 +863,7 @@ ol, ul {
     height: 638px;
     margin-top: 71px;
     margin-left: 128px; }
-    #sneakers .sneakers .headline {
+    #sneakers .sneakers .sneakers__headline {
       width: 1126px;
       height: 38px;
       font-family: Rubik;
@@ -878,19 +872,19 @@ ol, ul {
       font-size: 42px;
       line-height: 50px;
       color: #452A32; }
-    #sneakers .sneakers .pinky-model {
+    #sneakers .sneakers .sneakers__pinky-model {
       margin-top: 58px;
       width: 1163.8px;
       height: 541.8px;
       border: 0.1px solid #fff; }
-      #sneakers .sneakers .pinky-model .tabs {
+      #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs {
         width: 436px;
         height: 20px;
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 0;
         float: left; }
-        #sneakers .sneakers .pinky-model .tabs .tab {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs .sneakers__tab {
           display: inline-block;
           font-size: 18px;
           line-height: 21px;
@@ -903,51 +897,51 @@ ol, ul {
           background-repeat: no-repeat;
           background-size: 100% 4px;
           cursor: pointer; }
-          #sneakers .sneakers .pinky-model .tabs .tab-active, #sneakers .sneakers .pinky-model .tabs .tab:hover {
+          #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs .sneakers__tab_active, #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs .sneakers__tab:hover {
             background-image: linear-gradient(to left, #FFC670 -58.54%, #FF6492 159.35%);
             color: #452A32; }
-          #sneakers .sneakers .pinky-model .tabs .tab:last-child {
+          #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs .sneakers__tab:last-child {
             margin-right: 0; }
-      #sneakers .sneakers .pinky-model .photo {
+      #sneakers .sneakers .sneakers__pinky-model .sneakers__photo {
         margin-top: 42px;
         width: 594px;
         height: 470px;
         margin-left: -10px;
         float: left; }
-      #sneakers .sneakers .pinky-model .gallery-top {
+      #sneakers .sneakers .sneakers__pinky-model .gallery-top {
         width: 594px;
         height: 360px; }
-        #sneakers .sneakers .pinky-model .gallery-top .swiper-slide {
+        #sneakers .sneakers .sneakers__pinky-model .gallery-top .swiper-slide {
           position: relative; }
-          #sneakers .sneakers .pinky-model .gallery-top .swiper-slide:last-child > img {
+          #sneakers .sneakers .sneakers__pinky-model .gallery-top .swiper-slide:last-child > img {
             bottom: -90px; }
-        #sneakers .sneakers .pinky-model .gallery-top img {
+        #sneakers .sneakers .sneakers__pinky-model .gallery-top img {
           right: 18.5px;
           position: absolute;
           width: 557px;
           bottom: 0;
           padding: auto; }
-      #sneakers .sneakers .pinky-model .gallery-thumbs {
+      #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs {
         height: 96px;
         padding-top: 14px;
         width: 557px;
         background-color: #fff; }
-        #sneakers .sneakers .pinky-model .gallery-thumbs .swiper-slide {
+        #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs .swiper-slide {
           position: relative;
           width: 144px;
           padding-right: 17px;
           height: 96px;
           opacity: 0.6;
           overflow: hidden; }
-          #sneakers .sneakers .pinky-model .gallery-thumbs .swiper-slide:last-child > img {
+          #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs .swiper-slide:last-child > img {
             bottom: -20px; }
-          #sneakers .sneakers .pinky-model .gallery-thumbs .swiper-slide-thumb-active {
+          #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs .swiper-slide-thumb-active {
             opacity: 1; }
-        #sneakers .sneakers .pinky-model .gallery-thumbs img {
+        #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs img {
           position: absolute;
           width: 140px;
           bottom: 0; }
-      #sneakers .sneakers .pinky-model .swiper-button {
+      #sneakers .sneakers .sneakers__pinky-model .swiper-button {
         border: 0;
         background-color: #FF6492;
         width: 40px;
@@ -957,36 +951,36 @@ ol, ul {
         display: flex;
         justify-content: center;
         align-items: center; }
-        #sneakers .sneakers .pinky-model .swiper-button p {
+        #sneakers .sneakers .sneakers__pinky-model .swiper-button p {
           position: absolute;
           color: #fff;
           font-size: 35px;
           top: -3px; }
-        #sneakers .sneakers .pinky-model .swiper-button-next {
+        #sneakers .sneakers .sneakers__pinky-model .swiper-button-next {
           right: 0; }
-        #sneakers .sneakers .pinky-model .swiper-button-prev {
+        #sneakers .sneakers .sneakers__pinky-model .swiper-button-prev {
           left: 0; }
-      #sneakers .sneakers .pinky-model .info {
+      #sneakers .sneakers .sneakers__pinky-model .sneakers__info {
         width: 459px;
         height: 496px;
         margin-left: 111px;
         margin-top: -30px;
         float: right; }
-        #sneakers .sneakers .pinky-model .info h1 {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__info h1 {
           font-size: 32px;
           line-height: 38px;
           color: #452A32;
           font-family: Rubik;
           font-weight: normal;
           margin-bottom: 24px; }
-        #sneakers .sneakers .pinky-model .info p {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__info p {
           font-size: 16px;
           line-height: 23px;
           color: #917D83;
           font-family: Roboto;
           font-weight: normal;
           opacity: 0.9; }
-      #sneakers .sneakers .pinky-model #dd-size {
+      #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button {
         margin-top: 40px;
         width: 226px;
         height: 44px;
@@ -1003,58 +997,58 @@ ol, ul {
         padding-top: 13px;
         background-color: #fff;
         cursor: pointer; }
-        #sneakers .sneakers .pinky-model #dd-size > .arrow {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button > .arrow {
           position: absolute;
           color: #917D83;
           font-size: 30px;
           display: inline; }
-          #sneakers .sneakers .pinky-model #dd-size > .arrow-down {
+          #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button > .arrow_down {
             transform: rotate(90deg);
             right: 20px; }
-          #sneakers .sneakers .pinky-model #dd-size > .arrow-up {
+          #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button > .arrow_up {
             transform: rotate(270deg);
             right: 25px; }
-        #sneakers .sneakers .pinky-model #dd-size .dropdown li {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown li {
           width: 170px;
           padding: 10px; }
-        #sneakers .sneakers .pinky-model #dd-size .drop {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown_on {
           position: absolute;
           top: 45px;
           left: 25px;
           visibility: visible; }
-          #sneakers .sneakers .pinky-model #dd-size .drop li:hover {
+          #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown_on li:hover {
             background: #bebebe;
             border-radius: 10px; }
-          #sneakers .sneakers .pinky-model #dd-size .drop-off {
-            position: absolute;
-            visibility: hidden; }
-      #sneakers .sneakers .pinky-model .prices {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown_off {
+          position: absolute;
+          visibility: hidden; }
+      #sneakers .sneakers .sneakers__pinky-model .sneakers__prices {
         margin-top: 125px;
         font-family: Rubik;
         font-weight: normal; }
-        #sneakers .sneakers .pinky-model .prices span:first-child {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__prices span:first-child {
           color: #FF6492;
           font-size: 24px;
           line-height: 28px; }
-        #sneakers .sneakers .pinky-model .prices span:nth-child(2) {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__prices span:nth-child(2) {
           color: #FF6492;
           margin-left: 6px;
           font-size: 16px;
           line-height: 18.96px;
           vertical-align: top; }
-        #sneakers .sneakers .pinky-model .prices span:nth-child(3) {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__prices span:nth-child(3) {
           color: #BEBEBE;
           margin-left: 18px;
           font-size: 20px;
           line-height: 24px;
           vertical-align: top; }
-        #sneakers .sneakers .pinky-model .prices span:nth-child(4) {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__prices span:nth-child(4) {
           color: #BEBEBE;
           margin-left: 6px;
           font-size: 16px;
           line-height: 18.96px;
           vertical-align: top; }
-        #sneakers .sneakers .pinky-model .prices .line {
+        #sneakers .sneakers .sneakers__pinky-model .sneakers__prices .line {
           position: relative;
           display: inline-block;
           right: 70px;
@@ -1063,7 +1057,7 @@ ol, ul {
           height: 2px;
           border: 1.9px solid #BEBEBE;
           transform: matrix(0.99, -0.14, 0.13, 0.99, 0, 0); }
-      #sneakers .sneakers .pinky-model .button {
+      #sneakers .sneakers .sneakers__pinky-model .sneakers__button {
         width: 226px;
         height: 44px;
         margin-top: 32px;
@@ -1084,10 +1078,10 @@ ol, ul {
   width: 100%;
   height: 541.9px;
   border: 0.1px solid #F9F9F9; }
-  #advantages .headline {
+  #advantages .advantages__headline {
     margin: 106px;
     text-align: center; }
-    #advantages .headline p {
+    #advantages .advantages__headline p {
       font-family: Rubik;
       font-weight: 500;
       font-size: 42px;
@@ -1101,7 +1095,7 @@ ol, ul {
     margin-right: auto;
     display: flex;
     justify-content: space-between; }
-    #advantages .advantages .advantage .img {
+    #advantages .advantages .advantages__advantage .advantages__advantage-img {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1111,22 +1105,22 @@ ol, ul {
       border-radius: 98px;
       background: linear-gradient(125.58deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
       transform: matrix(-1, 0, 0, 1, 0, 0); }
-      #advantages .advantages .advantage .img svg {
+      #advantages .advantages .advantages__advantage .advantages__advantage-img svg {
         transform: scale(-1, 1); }
-      #advantages .advantages .advantage .img:first-child .img-wrapper {
+      #advantages .advantages .advantages__advantage .advantages__advantage-img:first-child .advantages__advantage-img-wrapper {
         position: relative;
         right: 1px; }
-      #advantages .advantages .advantage .img:nth-child(3) .img-wrapper {
+      #advantages .advantages .advantages__advantage .advantages__advantage-img:nth-child(3) .advantages__advantage-img-wrapper {
         position: relative;
         right: 1px; }
-    #advantages .advantages .advantage .content {
+    #advantages .advantages .advantages__advantage .advantages__advantage-content {
       text-align: center; }
-      #advantages .advantages .advantage .content h2 {
+      #advantages .advantages .advantages__advantage .advantages__advantage-content h2 {
         font-family: Rubik;
         font-size: 20px;
         line-height: 24px;
         color: #452A32; }
-      #advantages .advantages .advantage .content p {
+      #advantages .advantages .advantages__advantage .advantages__advantage-content p {
         font-family: Roboto;
         font-weight: normal;
         font-size: 16px;
@@ -1134,58 +1128,58 @@ ol, ul {
         color: #917D83;
         opacity: 0.9; }
 
-#feedback {
+.feedback {
   height: 469.9px;
   width: 100%;
   border: 0.1px solid #fff;
   background: #fff; }
-  #feedback .headline {
+  .feedback .feedback__headline {
     margin-top: 72px;
     display: flex;
     justify-content: center; }
-    #feedback .headline p {
+    .feedback .feedback__headline p {
       font-family: Rubik;
       font-weight: 500;
       font-size: 42px;
       line-height: 50px;
       color: #452A32; }
-  #feedback .swiper-container {
+  .feedback .swiper-container {
     width: 1140px;
     height: 282px; }
-    #feedback .swiper-container .swiper-wrapper .swiper-slide {
+    .feedback .swiper-container .swiper-wrapper .swiper-slide {
       display: flex;
       justify-content: center; }
-      #feedback .swiper-container .swiper-wrapper .swiper-slide .slide {
+      .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide {
         display: flex;
         justify-content: center;
         align-items: center; }
-        #feedback .swiper-container .swiper-wrapper .swiper-slide .slide .author-photo {
+        .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide .feedback__author-photo {
           margin-right: 42px;
           width: 167px;
           height: 167px;
           display: flex;
           justify-content: center; }
-          #feedback .swiper-container .swiper-wrapper .swiper-slide .slide .author-photo img {
+          .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide .feedback__author-photo img {
             width: 167px;
             height: 167px;
             object-fit: cover;
             border-radius: 50%; }
-        #feedback .swiper-container .swiper-wrapper .swiper-slide .slide .author-feedback {
+        .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide .feedback__author-text {
           width: 462px; }
-          #feedback .swiper-container .swiper-wrapper .swiper-slide .slide .author-feedback .author-name {
+          .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide .feedback__author-text .feedback__author-name {
             font-family: Rubik;
             font-size: 20px;
             font-weight: 500;
             line-height: 24px;
             color: #452A32; }
-          #feedback .swiper-container .swiper-wrapper .swiper-slide .slide .author-feedback p {
+          .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide .feedback__author-text p {
             margin-top: 16px;
             font-family: Roboto;
             font-size: 16px;
             line-height: 23px;
             color: #917D83;
             opacity: .9; }
-    #feedback .swiper-container .swiper-button {
+    .feedback .swiper-container .swiper-button {
       background-color: rgba(0, 0, 0, 0);
       border: 1px solid rgba(255, 100, 146, 0.61);
       color: rgba(255, 100, 146, 0.61);
@@ -1196,49 +1190,49 @@ ol, ul {
       display: flex;
       justify-content: center;
       align-items: center; }
-      #feedback .swiper-container .swiper-button p {
+      .feedback .swiper-container .swiper-button p {
         color: rgba(255, 100, 146, 0.61);
         position: absolute;
         font-size: 35px;
         top: 0px; }
-    #feedback .swiper-container .swiper-pagination {
+    .feedback .swiper-container .swiper-pagination {
       bottom: 0; }
-    #feedback .swiper-container .swiper-pagination-bullet {
+    .feedback .swiper-container .swiper-pagination-bullet {
       width: 53px;
       height: 3px;
       background-color: #FF6492;
       opacity: 0.3;
       border-radius: 300px; }
-      #feedback .swiper-container .swiper-pagination-bullet-active {
+      .feedback .swiper-container .swiper-pagination-bullet-active {
         background-color: #FF6492;
         opacity: 1;
         border-radius: 600px; }
 
-#pay-and-delivery {
+.pay-and-delivery {
   height: 535.9px;
   weight: 100%;
   background-color: #F9F9F9;
   border: 0.1px solid #F9F9F9; }
-  #pay-and-delivery .headline {
+  .pay-and-delivery .pay-and-delivery__headline {
     display: flex;
     justify-content: center;
     margin-top: 72px; }
-    #pay-and-delivery .headline p {
+    .pay-and-delivery .pay-and-delivery__headline p {
       font-family: Rubik;
       font-size: 42px;
       font-weight: 500;
       line-height: 50px;
       color: #452A32; }
-  #pay-and-delivery .buy-process {
+  .pay-and-delivery .pay-and-delivery__buy-process {
     margin: 52px;
     height: 181px;
     display: flex;
     justify-content: center;
     align-items: flex-start; }
-    #pay-and-delivery .buy-process .stage {
+    .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage {
       padding: 0 43.5px;
       text-align: center; }
-      #pay-and-delivery .buy-process .stage .img {
+      .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage .img {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1248,23 +1242,23 @@ ol, ul {
         background: linear-gradient(124.96deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
         transform: matrix(-1, 0, 0, 1, 0, 0);
         border-radius: 50%; }
-        #pay-and-delivery .buy-process .stage .img svg {
+        .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage .img svg {
           transform: scale(-1, 1); }
-      #pay-and-delivery .buy-process .stage .description {
+      .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage .pay-and-delivery__buy-process-description {
         margin-top: 24px; }
-        #pay-and-delivery .buy-process .stage .description p {
+        .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage .pay-and-delivery__buy-process-description p {
           font-family: Roboto;
           font-weight: normal;
           font-size: 16px;
           line-height: 22px;
           color: #000; }
-    #pay-and-delivery .buy-process .arrow {
+    .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-arrow {
       padding-top: 20px;
       width: 15px;
       height: 24px;
       font-size: 47px;
       color: rgba(255, 100, 109, 0.81); }
-  #pay-and-delivery .button {
+  .pay-and-delivery .pay-and-delivery__button {
     margin: 72px auto 0;
     border: 0.1px solid rgba(0, 0, 0, 0);
     width: 266px;
@@ -1273,7 +1267,7 @@ ol, ul {
     border-radius: 600px;
     box-shadow: 0 16px 30px rgba(255, 100, 146, 0.2);
     cursor: pointer; }
-    #pay-and-delivery .button p {
+    .pay-and-delivery .pay-and-delivery__button p {
       text-align: center;
       margin: 10px auto;
       font-family: Roboto;
@@ -1281,7 +1275,7 @@ ol, ul {
       line-height: 23px;
       color: #fff; }
 
-#contacts {
+.contacts {
   display: flex;
   justify-content: flex-start;
   position: relative;
@@ -1291,27 +1285,27 @@ ol, ul {
   color: #fff;
   font-family: Proxima Nova;
   font-style: normal; }
-  #contacts .info {
+  .contacts .contacts__info {
     margin: 64px; }
-    #contacts .info .phone {
+    .contacts .contacts__info .contacts__phone {
       font-size: 24px;
       line-height: 29px; }
-    #contacts .info .mail, #contacts .info .address {
+    .contacts .contacts__info .contacts__mail, .contacts .contacts__info .contacts__address {
       font-size: 16px;
       line-height: 19px;
       margin-top: 16px; }
-    #contacts .info .address {
+    .contacts .contacts__info .contacts__address {
       margin-top: 32px; }
-    #contacts .info .social-media {
+    .contacts .contacts__info .contacts__social-media {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       margin-top: 64px; }
-      #contacts .info .social-media div {
+      .contacts .contacts__info .contacts__social-media div {
         margin: 0 35px 0 0; }
-        #contacts .info .social-media div svg:last-child {
+        .contacts .contacts__info .contacts__social-media div svg:last-child {
           margin: 0; }
-    #contacts .info .developer {
+    .contacts .contacts__info .contacts__developer {
       position: absolute;
       bottom: 64px;
       color: #607894; }

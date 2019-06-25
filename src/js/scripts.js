@@ -1,17 +1,17 @@
 
 
-$('#dd-size').click(function() {
-    if (this.className == 'disabled') {
+$('.sneakers__dd-button').click(function() {
+    if (this.className == 'sneakers__dd-button sneakers__dd-button_disabled') {
         let len = $(this).find('li').length;
         $(this).height(len * 37 + 35);
-        this.className = 'enabled';
-        $('#dd-size .arrow-down:first').prop('className', 'arrow-up arrow');
-        $('#dd-size .dropdown:first').prop('className', 'dropdown drop');
+        this.className = 'sneakers__dd-button sneakers__dd-button_enabled';
+        $('.sneakers__dd-button .arrow_down:first').prop('className', 'arrow_up arrow');
+        $('.sneakers__dd-button .dropdown:first').prop('className', 'dropdown dropdown');
     } else {
         $(this).height(29);
-        this.className = 'disabled';
-        $('#dd-size .arrow-up:first').prop('className', 'arrow-down arrow');
-        $('#dd-size .dropdown:first').prop('className', 'dropdown drop-off');
+        this.className = 'sneakers__dd-button sneakers__dd-button_disabled';
+        $('.sneakers__dd-button .arrow_up:first').prop('className', 'arrow_down arrow');
+        $('.sneakers__dd-button .dropdown:first').prop('className', 'dropdown dropdown_off');
     }
 });
 

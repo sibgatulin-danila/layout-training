@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .menu {
+    .header__menu {
         & li {
             float: left;
             margin-right: 40px;
@@ -23,7 +23,7 @@
             }
         }
     }
-    .contact {
+    .header__contact {
         font-size: 16px;
         font-weight: bold;   
     }

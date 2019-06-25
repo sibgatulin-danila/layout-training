@@ -1,9 +1,9 @@
-.slide {
+.feedback__slide {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .author-photo {
+    .feedback__author-photo {
         margin-right: 42px;
         width: 167px;
         height: 167px;
@@ -18,9 +18,9 @@
         }
     }
 
-    .author-feedback {
+    .feedback__author-text {
         width: 462px;
-        .author-name{
+        .feedback__author-name{
             font-family: Rubik;
             font-size: 20px;
             font-weight: 500;

@@ -1,9 +1,9 @@
-.sneaker {
+.slide__sneaker {
     height: 100%;
     float: left;
     padding-left: 10px;
 
-    .ellipse {
+    .slide__sneaker-ellipse {
         position: absolute;
         left: 30px;
         top: 10px;
@@ -13,14 +13,14 @@
         background-color: rgba(252, 228, 18, 0.94);
     }
 
-    img {
+    .slide__sneaker-img {
         position: absolute;
         width: 373px;
         height: 361px;
         transform: rotate(30deg);
     }
 
-    .add {
+    .slide__sneaker-add-button {
         position: absolute;
         width: 42px;
         height: 42px;
@@ -33,7 +33,7 @@
         justify-content: center;
         align-items: center;
 
-        .add-symbol {
+        .slide__sneaker-add-symbol {
             font-size: 37px;
             font-weight: bold;
             color: #fff;
