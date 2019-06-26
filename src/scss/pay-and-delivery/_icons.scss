@@ -4,12 +4,17 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    
 
     .pay-and-delivery__buy-process-stage {
         padding:0 43.5px;
         text-align: center;
+        @include media(0,700px){
+            padding: 0 20px;
+        }
 
         .img {
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -19,6 +24,7 @@
             background: linear-gradient(124.96deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
             transform: matrix(-1, 0, 0, 1, 0, 0);
             border-radius: 50%;
+            
             svg{
                 transform: scale(-1, 1);
             }
@@ -43,5 +49,22 @@
         height: 24px;
         font-size: 47px;
         color: rgba(255, 100, 109, 0.81);
+        
     }
+    
+    @include media(0,700px){
+        flex-wrap: wrap;
+        width: 100%;
+        
+        margin: 0 auto;
+    }
+    @include media(0,630px){
+        :nth-child(4) p{
+            display: none;
+        }
+        :nth-child(5){
+            padding-left: 0;
+        }    
+    }
+    
 }

@@ -1444,6 +1444,9 @@ ol, ul {
     display: flex;
     justify-content: center;
     margin-top: 72px; }
+    @media (min-width: 0) and (max-width: 899px) {
+      .pay-and-delivery .pay-and-delivery__headline {
+        margin-top: 30px; } }
     .pay-and-delivery .pay-and-delivery__headline p {
       font-family: Rubik;
       font-size: 42px;
@@ -1459,6 +1462,9 @@ ol, ul {
     .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage {
       padding: 0 43.5px;
       text-align: center; }
+      @media (min-width: 0) and (max-width: 699px) {
+        .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage {
+          padding: 0 20px; } }
       .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage .img {
         display: flex;
         align-items: center;
@@ -1485,6 +1491,16 @@ ol, ul {
       height: 24px;
       font-size: 47px;
       color: rgba(255, 100, 109, 0.81); }
+    @media (min-width: 0) and (max-width: 699px) {
+      .pay-and-delivery .pay-and-delivery__buy-process {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto; } }
+    @media (min-width: 0) and (max-width: 629px) {
+      .pay-and-delivery .pay-and-delivery__buy-process :nth-child(4) p {
+        display: none; }
+      .pay-and-delivery .pay-and-delivery__buy-process :nth-child(5) {
+        padding-left: 0; } }
   .pay-and-delivery .pay-and-delivery__button {
     margin: 72px auto 0;
     border: 0.1px solid rgba(0, 0, 0, 0);
@@ -1494,6 +1510,12 @@ ol, ul {
     border-radius: 600px;
     box-shadow: 0 16px 30px rgba(255, 100, 146, 0.2);
     cursor: pointer; }
+    @media (min-width: 0) and (max-width: 899px) {
+      .pay-and-delivery .pay-and-delivery__button {
+        margin-top: 100px; } }
+    @media (min-width: 0) and (max-width: 699px) {
+      .pay-and-delivery .pay-and-delivery__button {
+        margin-top: 200px; } }
     .pay-and-delivery .pay-and-delivery__button p {
       text-align: center;
       margin: 10px auto;
