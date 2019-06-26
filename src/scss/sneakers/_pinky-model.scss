@@ -2,20 +2,28 @@
 
 .sneakers__photo {
     margin-top: 42px;
-    width: 594px;
-    height: 470px;
+    max-width: 594px;
+    width: 100%;
     margin-left: -10px;
-    float: left;
+    @include media(0, 780px){
+        margin-top: 15px;
+        margin: 0 auto;
+    }
 }
 @import "gallery";
 
 .sneakers__info {
-    width: 459px;
-    height: 496px;
-    margin-left: 111px;
-    margin-top: -30px;
-    float: right;
-
+    max-width: 459px;
+    height: 541px;
+    display: flex;
+    // justify-content: flex-start;
+    flex-direction: column;
+    @include media(0, 780px){
+        margin-top: 15px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
     h1 {
         font-size: 32px;
         line-height: 38px;
@@ -26,18 +34,29 @@
     }
 
     p {
+        width: 100%;
         font-size: 16px;
         line-height: 23px;
         color: #917D83;
         font-family: Roboto;
         font-weight: normal;
         opacity: 0.9;
+        @include media(0, 845px){
+            font-size: 14px;
+        }
     }
 }
 @import "dropdown-button";
 
 .sneakers__prices {
     margin-top: 125px;
+    @include media(0, 845px){
+        margin-top: 100px;
+    }
+    @include media(0, 780px){
+        margin-top: 70px;
+        
+    }
     font-family: Rubik;
     font-weight: normal;
 
@@ -100,4 +119,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 23px;
+    @include media(0, 780px){
+        margin: 10px auto;
+    }
 }

@@ -2,7 +2,12 @@
 .gallery-top {
     width: 594px;
     height: 360px;
-
+    @include media(0, 950px){
+        width:500px; 
+    } 
+    @include media(0,500px){
+        width:400px; 
+    }
     .swiper-slide {
         position: relative;
 
@@ -15,6 +20,13 @@
         right: 18.5px;
         position: absolute;
         width: 557px;
+        @include media(0, 950px){
+            width: 500px - 37;
+        }
+
+        @include media(0,500px){
+            width:400px - 37; 
+        }
         bottom: 0;
         padding: auto;
     }
@@ -25,11 +37,23 @@
     padding-top: 14px;
     width: 557px;
     background-color: #fff;
+    @include media(0, 950px){
+        width: 500px - 37;
+    }
+    @include media(0, 500px){
+        width: 400px - 37;
+    }
 
     .swiper-slide {
         position: relative;
         width: 144px;
         padding-right: 17px;
+        @include media(0, 950px){
+            padding-right: 13px;
+        }
+        @include media(0,500px){
+            padding-right: 9px; 
+        }
         height: 96px;
         opacity: 0.6;
         overflow: hidden;
@@ -46,6 +70,10 @@
     img {
         position: absolute;
         width: 140px;
+        @include media(0, 950px){
+            width: 140px - 37;
+        }
+        
         bottom: 0;
     }
 }

@@ -3,6 +3,7 @@
     width: 226px;
     height: 44px;
     position: absolute;
+    top: 260px;
     z-index: 10;
     border: 1px solid #F2E0E5;
     color: #917D83;
@@ -15,6 +16,25 @@
     padding-top: 13px;
     background-color: #fff;
     cursor: pointer;
+
+    @include media(0, 1000px){
+        top: 300px;
+    }
+    @include media(0, 780px){
+        top: 670px;
+        left: 30%;
+        text-align: left;
+    }
+    @include media(0, 458px){
+        top: 690px;
+        left: 23%;
+        text-align: left;
+    }
+    @include media(0, 413px){
+        top: 710px;
+        left: 23%;
+        text-align: left;
+    }
 
     > .arrow {
         position: absolute;
@@ -54,4 +74,5 @@
         position: absolute;
         visibility: hidden;
     }
+
 }
