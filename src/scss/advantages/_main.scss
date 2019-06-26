@@ -7,6 +7,10 @@
     .advantages__headline {
         margin: 106px;
         text-align: center;
+        @include media(0, 650px){
+            margin: 30px;
+            margin-bottom: 15px;
+        }
 
         p {
             font-family: Rubik;

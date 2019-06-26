@@ -1189,7 +1189,7 @@ ol, ul {
             text-align: left; } }
         @media (min-width: 0) and (max-width: 412px) {
           #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button {
-            top: 710px;
+            top: 700px;
             left: 23%;
             text-align: left; } }
         #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button > .arrow {
@@ -1285,6 +1285,10 @@ ol, ul {
   #advantages .advantages__headline {
     margin: 106px;
     text-align: center; }
+    @media (min-width: 0) and (max-width: 649px) {
+      #advantages .advantages__headline {
+        margin: 30px;
+        margin-bottom: 15px; } }
     #advantages .advantages__headline p {
       font-family: Rubik;
       font-weight: 500;
@@ -1292,13 +1296,23 @@ ol, ul {
       line-height: 50px;
       color: #452A32; }
   #advantages .advantages {
-    width: 1050px;
+    max-width: 1050px;
+    width: 100%;
     height: 205px;
     margin-top: 88px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between; }
+    @media (min-width: 0) and (max-width: 649px) {
+      #advantages .advantages {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto; } }
+    @media (min-width: 0) and (max-width: 649px) {
+      #advantages .advantages .advantages__advantage {
+        margin: 10px; } }
     #advantages .advantages .advantages__advantage .advantages__advantage-img {
       display: flex;
       justify-content: center;
