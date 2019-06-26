@@ -3,12 +3,28 @@
     justify-content: flex-start;
     position: relative;
     width: 100%;
+    max-width: 1440px;
     height: 433px;
     background-color: #24303E;
     color: #fff;
     font-family: Proxima Nova;
     font-style: normal;
+
+    @include media(0, 1024px){
+        flex-direction: column;
+        height: 866px;;
+        margin: 0 auto;
+    }
+
+    .contacts__map{
+        max-width: 700px;;
+        @include media(0, 1024px){
+            max-width: 1024px;
+        }
+    }
+
     .contacts__info{
+        width: 50%;
         margin: 64px;
         .contacts__phone{
             font-size: 24px;
