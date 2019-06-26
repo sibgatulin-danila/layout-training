@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
+	min-width: 330px;
     @import 'header';
 
     @import "slider/slider";
@@ -25,6 +25,9 @@
             vertical-align: middle;
             margin-left: 23px;
         }
+        @include media(0, 1000px) {
+        	display: none;
+        }
     }
 
     .scroll-down {
@@ -34,7 +37,9 @@
         position: absolute;
         bottom: 63px;
         z-index: 10;
-
+		@include media(0, 650px){
+			display: none;
+		}
         .scroll-down__text {
             font-family: Proxima Nova;
             transform: rotate(-90deg);
