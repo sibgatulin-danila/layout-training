@@ -9,17 +9,22 @@
         height: 167px;
         display: flex;
         justify-content: center;
-
+        @include media(0, 700px){
+            @include size(130px);
+        }
         img {
             width: 167px;
             height: 167px;
+            @include media(0, 700px){
+                @include size(130px);
+            }
             object-fit: cover;
             border-radius: 50%;
         }
     }
 
     .feedback__author-text {
-        width: 462px;
+        max-width: 462px;
         .feedback__author-name{
             font-family: Rubik;
             font-size: 20px;

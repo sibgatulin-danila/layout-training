@@ -1,6 +1,7 @@
 .swiper-container {
-    width: 1440px-300;
+    max-width: 1440px-300;
     height: 282px;
+    margin: 0 15px;
 
     .swiper-wrapper {
         .swiper-slide {

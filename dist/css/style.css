@@ -1362,8 +1362,9 @@ ol, ul {
       line-height: 50px;
       color: #452A32; }
   .feedback .swiper-container {
-    width: 1140px;
-    height: 282px; }
+    max-width: 1140px;
+    height: 282px;
+    margin: 0 15px; }
     .feedback .swiper-container .swiper-wrapper .swiper-slide {
       display: flex;
       justify-content: center; }
@@ -1377,13 +1378,21 @@ ol, ul {
           height: 167px;
           display: flex;
           justify-content: center; }
+          @media (min-width: 0) and (max-width: 699px) {
+            .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide .feedback__author-photo {
+              width: 130px;
+              height: 130px; } }
           .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide .feedback__author-photo img {
             width: 167px;
             height: 167px;
             object-fit: cover;
             border-radius: 50%; }
+            @media (min-width: 0) and (max-width: 699px) {
+              .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide .feedback__author-photo img {
+                width: 130px;
+                height: 130px; } }
         .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide .feedback__author-text {
-          width: 462px; }
+          max-width: 462px; }
           .feedback .swiper-container .swiper-wrapper .swiper-slide .feedback__slide .feedback__author-text .feedback__author-name {
             font-family: Rubik;
             font-size: 20px;
