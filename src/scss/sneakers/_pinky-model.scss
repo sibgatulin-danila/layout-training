@@ -6,8 +6,7 @@
     width: 100%;
     margin-left: -10px;
     @include media(0, 780px){
-        margin-top: 15px;
-        margin: 0 auto;
+        margin: 15px auto 10px auto;
     }
 }
 @import "gallery";
@@ -49,12 +48,16 @@
 @import "dropdown-button";
 
 .sneakers__prices {
-    margin-top: 125px;
+    position: relative;
+    margin-top: 55px;
+    @include media(0, 871px){
+        margin-top: 15px;
+    }
     @include media(0, 845px){
-        margin-top: 100px;
+        // margin-top: 100px;
     }
     @include media(0, 780px){
-        margin-top: 70px;
+        // margin-top: 70px;
         
     }
     font-family: Rubik;
@@ -119,7 +122,11 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 23px;
-    @include media(0, 780px){
-        margin: 10px auto;
+    @include media(0, 871px){
+        margin-top: 15px;
     }
+    @include media(0, 780px){
+        margin: 10px auto 0 auto;
+    }
+
 }
