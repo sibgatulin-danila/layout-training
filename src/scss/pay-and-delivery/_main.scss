@@ -1,10 +1,10 @@
 .pay-and-delivery {
     height: 535.9px;
-    weight: 100%;
+    width: 100%;
     background-color: #F9F9F9;
     border: 0.1px solid #F9F9F9;
     
-    .pay-and-delivery__headline {
+    &__headline {
         display: flex;
         justify-content: center;
         margin-top: 72px;

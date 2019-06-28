@@ -9,15 +9,19 @@
         height: 167px;
         display: flex;
         justify-content: center;
-        @include media(0, 700px){
+
+        @include media(0, 700px) {
             @include size(130px);
         }
+
         img {
             width: 167px;
             height: 167px;
-            @include media(0, 700px){
+
+            @include media(0, 700px) {
                 @include size(130px);
             }
+
             object-fit: cover;
             border-radius: 50%;
         }
@@ -25,14 +29,16 @@
 
     .feedback__author-text {
         max-width: 462px;
-        .feedback__author-name{
+
+        .feedback__author-name {
             font-family: Rubik;
             font-size: 20px;
             font-weight: 500;
             line-height: 24px;
             color: #452A32;
         }
-        p{
+
+        p {
             margin-top: 16px;
             font-family: Roboto;
             font-size: 16px;

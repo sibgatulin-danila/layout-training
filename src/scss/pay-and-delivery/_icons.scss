@@ -1,4 +1,4 @@
-.pay-and-delivery__buy-process {
+&__buy-process {
     margin: 52px;
     height: 181px;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: flex-start;
     
 
-    .pay-and-delivery__buy-process-stage {
+    &-stage {
         padding:0 43.5px;
         text-align: center;
         @include media(0,700px){
@@ -30,20 +30,20 @@
             }
         }
 
-        .pay-and-delivery__buy-process-description {
-            margin-top: 24px;
+    }
+    &-description {
+        margin-top: 24px;
 
-            p {
-                font-family: Roboto;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 22px;
-                color: #000;
-            }
+        p {
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000;
         }
     }
 
-    .pay-and-delivery__buy-process-arrow {
+    &-arrow {
         padding-top: 20px;
         width: 15px;
         height: 24px;

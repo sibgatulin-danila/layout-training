@@ -1,18 +1,15 @@
-#first-screen {
+.first-screen {
     position: relative;
-    // z-index: 0;
     height: 733px;
     background: url("../imgs/sweet morning.jpg") no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-	// min-width: 330px;
+    
     @import 'header';
 
     @import "slider/slider";
-
-
 
     .social-media {
         position: absolute;
@@ -20,13 +17,14 @@
         bottom: 74px;
         z-index: 10;
 
-        & div {
+        div {
             display: inline;
             vertical-align: middle;
             margin-left: 23px;
         }
+
         @include media(0, 1000px) {
-        	display: none;
+            display: none;
         }
     }
 
@@ -37,10 +35,12 @@
         position: absolute;
         bottom: 63px;
         z-index: 10;
-		@include media(0, 650px){
-			display: none;
-		}
-        .scroll-down__text {
+
+        @include media(0, 650px) {
+            display: none;
+        }
+
+        &__text {
             font-family: Proxima Nova;
             transform: rotate(-90deg);
             margin-bottom: 24px;
@@ -52,7 +52,7 @@
             color: #fff;
         }
 
-        .scroll-down__arrow {
+        &__arrow {
             padding-top: 10px;
             text-align: center;
             vertical-align: bottom;
@@ -68,10 +68,12 @@
             border-radius: 600px;
         }
     }
+
     @media (max-width: 1440px) {
         width: 100%;
     }
-    @include media(0, 650px){
+
+    @include media(0, 650px) {
         height: 850px;
 
     }

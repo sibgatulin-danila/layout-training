@@ -6,127 +6,137 @@
     width: 100%;
     justify-content: center;
 
-    .slide__text {
-        color: #fff;
+    &__headline {
+        font-style: italic;
+        text-transform: uppercase;
+        font-family: Rubik;
+        font-weight: 700;
 
-        .slide__headline {
-            font-style: italic;
-            text-transform: uppercase;
-            font-family: Rubik;
-            font-weight: 700;
+        span:first-child {
+            font-size: 72px;
+            line-height: 85px;
 
-            span:first-child {
-                font-size: 72px;
-                line-height: 85px;
-
-                @include media(0, 1083px) {
-                    $mainWidth: 60px;
-                    font-size: $mainWidth;
-                    line-height: $mainWidth + 13;
-                }
-                @include media(0, 830px){
-                    $mainWidth: 50px;
-                    font-size: $mainWidth;
-                    line-height: $mainWidth + 13;
-                }
+            @include media(0, 1083px) {
+                $mainWidth: 60px;
+                font-size: $mainWidth;
+                line-height: $mainWidth + 13;
             }
 
-            span:last-child {
-
-                font-size: 48px;
-                line-height: 57px;
-
-                @include media(0, 1083px) {
-                    font-size: 38px;
-                    line-height: 38px + 9;
-                }
-                @include media(0, 830px){
-                    $mainWidth: 30px;
-                    font-size: $mainWidth;
-                    line-height: $mainWidth + 9;
-                }
+            @include media(0, 830px) {
+                $mainWidth: 50px;
+                font-size: $mainWidth;
+                line-height: $mainWidth + 13;
             }
         }
 
-        .slide__description {
-            margin-top: 30px;
-            max-width: 350px;
-            font-family: Proxima Nova;
-            font-size: 18px;
-            line-height: 27px;
-            font-weight: 600;
-            @include media(0, 830px){
-                $mainWidth: 12px;
+        span:last-child {
+            font-size: 48px;
+            line-height: 57px;
+
+            @include media(0, 1083px) {
+                font-size: 38px;
+                line-height: 38px + 9;
+            }
+
+            @include media(0, 830px) {
+                $mainWidth: 30px;
                 font-size: $mainWidth;
                 line-height: $mainWidth + 9;
             }
         }
     }
 
-    .slide__buttons {
+    &__text {
+        color: #fff;
+    }
+
+    &__description {
+        margin-top: 30px;
+        max-width: 350px;
+        font-family: Proxima Nova;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 600;
+
+        @include media(0, 830px) {
+            $mainWidth: 12px;
+            font-size: $mainWidth;
+            line-height: $mainWidth + 9;
+        }
+    }
+
+    &__button {
+        display: flex;
+        width: 180px;
+        height: 40px;
+        background: rgba(255, 245, 4, .93);
+        box-shadow: 0 4px 20px rgba(130, 22, 22, .2);
+        border-radius: 600px;
+
+        p {
+            text-align: center;
+            margin: auto;
+            font-family: Proxima Nova;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 600;
+            color: #af3838
+        }
+    }
+
+    &__button_add {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #e87747;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #e87747;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+        p {
+            margin: 0;
+            font-size: 30px;
+            color: #fff;
+            font-weight: 600
+        }
+
+        @include media(0, 650px) {
+            display: flex;
+        }
+    }
+
+    &__buttons {
         display: flex;
         margin-top: 64px;
         justify-content: flex-start;
 
-        .slide__button {
-            display: flex;
-            width: 180px;
-            height: 40px;
-            background: rgba(255, 245, 4, .93);
-            box-shadow: 0 4px 20px rgba(130, 22, 22, .2);
-            border-radius: 600px;
-            p {
-                text-align: center;
-                margin: auto;
-                font-family: Proxima Nova;
-                font-size: 16px;
-                line-height: 19px;
-                font-weight: 600;
-                color: #af3838
-            }
-        }
-        .slide__button_add{
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background-color: #e87747;
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background-color: #e87747;
-            justify-content: center;
-            align-items: center;
-            display: none;
-            p {
-                margin: 0;
-                font-size: 30px;
-                color: #fff;
-                font-weight: 600
-            }
-            @include media(0, 650px){
-            	display: flex;
-            }   
-        }
-        @include media(0, 650px){
+        @include media(0, 650px) {
             justify-content: space-around;
-        } 
+        }
     }
 
     @import "sneaker";
 
-    @include media(0, 650px){
+    @include media(0, 650px) {
         flex-direction: column;
-        
         text-align: center;
-        .slide__description{
+
+        .slide__description {
             margin: 0 auto;
         }
-        .slide__sneaker{
+
+        .slide__sneaker {
             margin: 0 auto;
-            .slide__sneaker-add-button{
+
+            .slide__sneaker-add-button {
                 display: none;
             }
         }
+
         heigth: 800px;
     }
 }

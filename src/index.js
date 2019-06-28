@@ -28,7 +28,7 @@ $(document).ready(function() {
     });
 
 
-    var mySwiper = new Swiper('#first-screen .swiper-container', {
+    var mySwiper = new Swiper('.first-screen .swiper-container', {
         direction: 'horizontal',
         loop: false,
         pagination: {
@@ -47,7 +47,7 @@ $(document).ready(function() {
     
 
 
-    var mySwiper2 = new Swiper('#feedback .swiper-container', {
+    var mySwiper2 = new Swiper('.feedback .swiper-container', {
         direction: 'horizontal',
         loop: false,
         pagination: {
@@ -63,7 +63,7 @@ $(document).ready(function() {
     });
 
 
-    var galleryThumbs = new Swiper('#sneakers .gallery-thumbs', {
+    var galleryThumbs = new Swiper('.sneakers .gallery-thumbs', {
         spaceBetween: 10,
         slidesPerView: 4,
         loop: false,
@@ -72,7 +72,7 @@ $(document).ready(function() {
         watchSlidesProgress: true,
     });
 
-    var galleryTop = new Swiper('#sneakers .gallery-top', {
+    var galleryTop = new Swiper('.sneakers .gallery-top', {
         spaceBetween: 10,
         loop: false,
         navigation: {

@@ -635,9 +635,6 @@ a, a:hover {
 ol, ul {
   list-style: none; }
 
-#wrapper {
-  position: relative; }
-
 @font-face {
   font-family: 'Proxima Nova';
   src: url("../res/ProximaNova-Regular.eot");
@@ -678,7 +675,7 @@ ol, ul {
 .clearfix::after {
   clear: both; }
 
-#first-screen {
+.first-screen {
   position: relative;
   height: 733px;
   background: url("../imgs/sweet morning.jpg") no-repeat;
@@ -686,7 +683,7 @@ ol, ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
-  #first-screen #header {
+  .first-screen .header {
     margin-top: 32px;
     height: 40px;
     font-family: Proxima Nova;
@@ -698,147 +695,147 @@ ol, ul {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    #first-screen #header .header__menu {
+    .first-screen .header__menu {
       text-align: center;
       justify-content: center;
       flex-wrap: wrap;
       display: flex; }
       @media (min-width: 0) and (max-width: 449px) {
-        #first-screen #header .header__menu {
+        .first-screen .header__menu {
           margin-right: 0; } }
-      #first-screen #header .header__menu li {
+      .first-screen .header__menu li {
         float: left;
         margin-right: 40px; }
-        #first-screen #header .header__menu li:last-child {
+        .first-screen .header__menu li :last-child {
           margin-right: 0; }
-        #first-screen #header .header__menu li a {
+        .first-screen .header__menu li a {
           font-size: 16px;
           color: #fff; }
           @media (min-width: 0) and (max-width: 767px) {
-            #first-screen #header .header__menu li a {
+            .first-screen .header__menu li a {
               font-size: 12px; } }
-    #first-screen #header .header__contact {
+    .first-screen .header__contact {
       text-align: center;
       font-size: 16px;
       font-weight: bold;
       width: 145px; }
       @media (min-width: 0) and (max-width: 767px) {
-        #first-screen #header .header__contact {
+        .first-screen .header__contact {
           font-size: 12px; } }
     @media (min-width: 0) and (max-width: 449px) {
-      #first-screen #header {
+      .first-screen .header {
         flex-direction: column;
         height: 150px;
         margin-top: 10px;
         margin-left: 30px;
         margin-right: 30px; } }
-  #first-screen .slide {
+  .first-screen .slide {
     display: flex;
     margin: 0 auto;
     padding: 0;
     max-width: 1005px;
     width: 100%;
     justify-content: center; }
-    #first-screen .slide .slide__text {
-      color: #fff; }
-      #first-screen .slide .slide__text .slide__headline {
-        font-style: italic;
-        text-transform: uppercase;
-        font-family: Rubik;
-        font-weight: 700; }
-        #first-screen .slide .slide__text .slide__headline span:first-child {
-          font-size: 72px;
-          line-height: 85px; }
-          @media (min-width: 0) and (max-width: 1082px) {
-            #first-screen .slide .slide__text .slide__headline span:first-child {
-              font-size: 60px;
-              line-height: 73px; } }
-          @media (min-width: 0) and (max-width: 829px) {
-            #first-screen .slide .slide__text .slide__headline span:first-child {
-              font-size: 50px;
-              line-height: 63px; } }
-        #first-screen .slide .slide__text .slide__headline span:last-child {
-          font-size: 48px;
-          line-height: 57px; }
-          @media (min-width: 0) and (max-width: 1082px) {
-            #first-screen .slide .slide__text .slide__headline span:last-child {
-              font-size: 38px;
-              line-height: 47px; } }
-          @media (min-width: 0) and (max-width: 829px) {
-            #first-screen .slide .slide__text .slide__headline span:last-child {
-              font-size: 30px;
-              line-height: 39px; } }
-      #first-screen .slide .slide__text .slide__description {
-        margin-top: 30px;
-        max-width: 350px;
-        font-family: Proxima Nova;
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: 600; }
+    .first-screen .slide__headline {
+      font-style: italic;
+      text-transform: uppercase;
+      font-family: Rubik;
+      font-weight: 700; }
+      .first-screen .slide__headline span:first-child {
+        font-size: 72px;
+        line-height: 85px; }
+        @media (min-width: 0) and (max-width: 1082px) {
+          .first-screen .slide__headline span:first-child {
+            font-size: 60px;
+            line-height: 73px; } }
         @media (min-width: 0) and (max-width: 829px) {
-          #first-screen .slide .slide__text .slide__description {
-            font-size: 12px;
-            line-height: 21px; } }
-    #first-screen .slide .slide__buttons {
+          .first-screen .slide__headline span:first-child {
+            font-size: 50px;
+            line-height: 63px; } }
+      .first-screen .slide__headline span:last-child {
+        font-size: 48px;
+        line-height: 57px; }
+        @media (min-width: 0) and (max-width: 1082px) {
+          .first-screen .slide__headline span:last-child {
+            font-size: 38px;
+            line-height: 47px; } }
+        @media (min-width: 0) and (max-width: 829px) {
+          .first-screen .slide__headline span:last-child {
+            font-size: 30px;
+            line-height: 39px; } }
+    .first-screen .slide__text {
+      color: #fff; }
+    .first-screen .slide__description {
+      margin-top: 30px;
+      max-width: 350px;
+      font-family: Proxima Nova;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 600; }
+      @media (min-width: 0) and (max-width: 829px) {
+        .first-screen .slide__description {
+          font-size: 12px;
+          line-height: 21px; } }
+    .first-screen .slide__button {
+      display: flex;
+      width: 180px;
+      height: 40px;
+      background: rgba(255, 245, 4, 0.93);
+      box-shadow: 0 4px 20px rgba(130, 22, 22, 0.2);
+      border-radius: 600px; }
+      .first-screen .slide__button p {
+        text-align: center;
+        margin: auto;
+        font-family: Proxima Nova;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+        color: #af3838; }
+    .first-screen .slide__button_add {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: #e87747;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: #e87747;
+      justify-content: center;
+      align-items: center;
+      display: none; }
+      .first-screen .slide__button_add p {
+        margin: 0;
+        font-size: 30px;
+        color: #fff;
+        font-weight: 600; }
+      @media (min-width: 0) and (max-width: 649px) {
+        .first-screen .slide__button_add {
+          display: flex; } }
+    .first-screen .slide__buttons {
       display: flex;
       margin-top: 64px;
       justify-content: flex-start; }
-      #first-screen .slide .slide__buttons .slide__button {
-        display: flex;
-        width: 180px;
-        height: 40px;
-        background: rgba(255, 245, 4, 0.93);
-        box-shadow: 0 4px 20px rgba(130, 22, 22, 0.2);
-        border-radius: 600px; }
-        #first-screen .slide .slide__buttons .slide__button p {
-          text-align: center;
-          margin: auto;
-          font-family: Proxima Nova;
-          font-size: 16px;
-          line-height: 19px;
-          font-weight: 600;
-          color: #af3838; }
-      #first-screen .slide .slide__buttons .slide__button_add {
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
-        background-color: #e87747;
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
-        background-color: #e87747;
-        justify-content: center;
-        align-items: center;
-        display: none; }
-        #first-screen .slide .slide__buttons .slide__button_add p {
-          margin: 0;
-          font-size: 30px;
-          color: #fff;
-          font-weight: 600; }
-        @media (min-width: 0) and (max-width: 649px) {
-          #first-screen .slide .slide__buttons .slide__button_add {
-            display: flex; } }
       @media (min-width: 0) and (max-width: 649px) {
-        #first-screen .slide .slide__buttons {
+        .first-screen .slide__buttons {
           justify-content: space-around; } }
-    #first-screen .slide .slide__sneaker {
+    .first-screen .slide .slide__sneaker {
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
       margin-right: 100px; }
-      #first-screen .slide .slide__sneaker .slide__sneaker-ellipse {
+      .first-screen .slide .slide__sneaker-ellipse {
         position: absolute;
         width: 330px;
         height: 330px;
         background-color: rgba(252, 228, 18, 0.94);
         border-radius: 50%; }
-      #first-screen .slide .slide__sneaker .slide__sneaker-img {
+      .first-screen .slide .slide__sneaker-img {
         padding-top: 30px;
         transform: rotate(30deg);
         width: 373px;
         height: 361px; }
-      #first-screen .slide .slide__sneaker .slide__sneaker-add-button {
+      .first-screen .slide .slide__sneaker-add-button {
         width: 42px;
         height: 42px;
         border-radius: 50%;
@@ -848,56 +845,56 @@ ol, ul {
         position: absolute;
         right: 80px;
         bottom: 20px; }
-        #first-screen .slide .slide__sneaker .slide__sneaker-add-button p {
+        .first-screen .slide .slide__sneaker-add-button p {
           font-size: 38px;
           color: #fff;
           font-weight: 700; }
       @media (min-width: 0) and (max-width: 1082px) {
-        #first-screen .slide .slide__sneaker {
+        .first-screen .slide .slide__sneaker {
           margin-right: 70px; }
-          #first-screen .slide .slide__sneaker .slide__sneaker-add-button {
+          .first-screen .slide .slide__sneaker .slide__sneaker-add-button {
             width: 37px;
             height: 37px; }
-            #first-screen .slide .slide__sneaker .slide__sneaker-add-button p {
+            .first-screen .slide .slide__sneaker .slide__sneaker-add-button p {
               font-size: 33px; }
-          #first-screen .slide .slide__sneaker .slide__sneaker-img {
+          .first-screen .slide .slide__sneaker .slide__sneaker-img {
             width: 330px;
             height: 318px; }
-          #first-screen .slide .slide__sneaker .slide__sneaker-ellipse {
+          .first-screen .slide .slide__sneaker .slide__sneaker-ellipse {
             width: 300px;
             height: 300px; } }
       @media (min-width: 0) and (max-width: 829px) {
-        #first-screen .slide .slide__sneaker {
+        .first-screen .slide .slide__sneaker {
           margin-right: 40px; }
-          #first-screen .slide .slide__sneaker .slide__sneaker-add-button {
+          .first-screen .slide .slide__sneaker .slide__sneaker-add-button {
             width: 33px;
             height: 33px; }
-            #first-screen .slide .slide__sneaker .slide__sneaker-add-button p {
+            .first-screen .slide .slide__sneaker .slide__sneaker-add-button p {
               font-size: 29px; }
-          #first-screen .slide .slide__sneaker .slide__sneaker-img {
+          .first-screen .slide .slide__sneaker .slide__sneaker-img {
             width: 290px;
             height: 247px; }
-          #first-screen .slide .slide__sneaker .slide__sneaker-ellipse {
+          .first-screen .slide .slide__sneaker .slide__sneaker-ellipse {
             width: 250px;
             height: 250px; } }
     @media (min-width: 0) and (max-width: 649px) {
-      #first-screen .slide {
+      .first-screen .slide {
         flex-direction: column;
         text-align: center;
         heigth: 800px; }
-        #first-screen .slide .slide__description {
+        .first-screen .slide .slide__description {
           margin: 0 auto; }
-        #first-screen .slide .slide__sneaker {
+        .first-screen .slide .slide__sneaker {
           margin: 0 auto; }
-          #first-screen .slide .slide__sneaker .slide__sneaker-add-button {
+          .first-screen .slide .slide__sneaker .slide__sneaker-add-button {
             display: none; } }
-  #first-screen .swiper-container {
+  .first-screen .swiper-container {
     height: 460px;
     max-width: 1150px; }
     @media (min-width: 0) and (max-width: 649px) {
-      #first-screen .swiper-container {
+      .first-screen .swiper-container {
         height: 600px; } }
-  #first-screen .swiper-button {
+  .first-screen .swiper-button {
     color: #fff;
     width: 48px;
     height: 48px;
@@ -908,33 +905,33 @@ ol, ul {
     display: flex;
     justify-content: center;
     align-items: center; }
-    #first-screen .swiper-button p {
+    .first-screen .swiper-button p {
       position: absolute;
       font-size: 35px;
       top: 0px; }
-  #first-screen .swiper-pagination-bullet {
+  .first-screen .swiper-pagination-bullet {
     width: 98px;
     height: 3px;
     background-color: #fff;
     opacity: 0.3;
     border-radius: 300px; }
-    #first-screen .swiper-pagination-bullet-active {
+    .first-screen .swiper-pagination-bullet-active {
       background-color: #FCF312;
       opacity: 1;
       border-radius: 300px; }
-  #first-screen .social-media {
+  .first-screen .social-media {
     position: absolute;
     right: 146px;
     bottom: 74px;
     z-index: 10; }
-    #first-screen .social-media div {
+    .first-screen .social-media div {
       display: inline;
       vertical-align: middle;
       margin-left: 23px; }
     @media (min-width: 0) and (max-width: 999px) {
-      #first-screen .social-media {
+      .first-screen .social-media {
         display: none; } }
-  #first-screen .scroll-down {
+  .first-screen .scroll-down {
     width: 34px;
     height: 142px;
     left: 148px;
@@ -942,9 +939,9 @@ ol, ul {
     bottom: 63px;
     z-index: 10; }
     @media (min-width: 0) and (max-width: 649px) {
-      #first-screen .scroll-down {
+      .first-screen .scroll-down {
         display: none; } }
-    #first-screen .scroll-down .scroll-down__text {
+    .first-screen .scroll-down__text {
       font-family: Proxima Nova;
       transform: rotate(-90deg);
       margin-bottom: 24px;
@@ -954,7 +951,7 @@ ol, ul {
       text-transform: uppercase;
       font-weight: bold;
       color: #fff; }
-    #first-screen .scroll-down .scroll-down__arrow {
+    .first-screen .scroll-down__arrow {
       padding-top: 10px;
       text-align: center;
       vertical-align: bottom;
@@ -969,323 +966,317 @@ ol, ul {
       box-sizing: border-box;
       border-radius: 600px; }
   @media (max-width: 1440px) {
-    #first-screen {
+    .first-screen {
       width: 100%; } }
   @media (min-width: 0) and (max-width: 649px) {
-    #first-screen {
+    .first-screen {
       height: 850px; } }
 
-#sneakers {
-  height: 788.9px;
+.sneakers {
   background-color: #fff;
-  border-top: 0.1px solid #fff; }
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 71px; }
   @media (min-width: 0) and (max-width: 779px) {
-    #sneakers {
+    .sneakers {
+      padding-top: 15px;
       height: 1000px; } }
-  #sneakers .sneakers {
-    max-width: 1165px;
-    width: 100%;
-    height: 638px;
+  .sneakers__headline {
+    max-width: 1126px;
+    height: 38px;
+    font-family: Rubik;
     margin: 0 auto;
-    margin-top: 71px; }
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+    color: #452A32; }
+  .sneakers__pinky-model {
+    margin: 58px auto 0 auto;
+    position: relative;
+    max-width: 1163.8px;
+    width: 100%;
+    height: 541.8px;
+    border: 0.1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between; }
     @media (min-width: 0) and (max-width: 779px) {
-      #sneakers .sneakers {
-        margin-top: 15px; } }
-    #sneakers .sneakers .sneakers__headline {
-      max-width: 1126px;
-      height: 38px;
-      font-family: Rubik;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      font-weight: 500;
-      font-size: 42px;
-      line-height: 50px;
-      color: #452A32; }
-    #sneakers .sneakers .sneakers__pinky-model {
-      margin-top: 58px;
-      position: relative;
-      max-width: 1163.8px;
+      .sneakers__pinky-model {
+        flex-direction: column;
+        margin-top: 20px; } }
+    .sneakers__pinky-model .sneakers__tabs {
+      max-width: 436px;
       width: 100%;
-      height: 541.8px;
-      border: 0.1px solid rgba(0, 0, 0, 0);
+      height: 20px;
       display: flex;
       justify-content: space-between; }
       @media (min-width: 0) and (max-width: 779px) {
-        #sneakers .sneakers .sneakers__pinky-model {
-          flex-direction: column;
-          margin-top: 20px; } }
-      #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs {
-        max-width: 436px;
-        width: 100%;
-        height: 20px;
-        display: flex;
-        justify-content: space-between; }
-        @media (min-width: 0) and (max-width: 779px) {
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs {
-            margin: 0px auto; } }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs .sneakers__tab {
-          display: inline-block;
-          font-size: 18px;
-          line-height: 21px;
-          text-align: center;
-          font-family: Roboto;
-          color: #BEBEBE;
-          text-transform: capitalize;
-          margin-right: 48px;
-          background-position: 0 100%, 0 0;
-          background-repeat: no-repeat;
-          background-size: 100% 4px;
-          cursor: pointer; }
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs .sneakers__tab_active, #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs .sneakers__tab:hover {
-            background-image: linear-gradient(to left, #FFC670 -58.54%, #FF6492 159.35%);
-            color: #452A32; }
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__tabs .sneakers__tab:last-child {
-            margin-right: 0; }
-      #sneakers .sneakers .sneakers__pinky-model .sneakers__photo {
-        margin-top: 42px;
-        max-width: 594px;
-        width: 100%;
-        margin-left: -10px; }
-        @media (min-width: 0) and (max-width: 779px) {
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__photo {
-            margin: 15px auto 10px auto; } }
-      #sneakers .sneakers .sneakers__pinky-model .gallery-top {
-        width: 594px;
-        height: 360px; }
-        @media (min-width: 0) and (max-width: 949px) {
-          #sneakers .sneakers .sneakers__pinky-model .gallery-top {
-            width: 500px; } }
-        @media (min-width: 0) and (max-width: 499px) {
-          #sneakers .sneakers .sneakers__pinky-model .gallery-top {
-            width: 400px; } }
-        #sneakers .sneakers .sneakers__pinky-model .gallery-top .swiper-slide {
-          position: relative; }
-          #sneakers .sneakers .sneakers__pinky-model .gallery-top .swiper-slide:last-child > img {
-            bottom: -90px; }
-        #sneakers .sneakers .sneakers__pinky-model .gallery-top img {
-          right: 18.5px;
-          position: absolute;
-          width: 557px;
-          bottom: 0;
-          padding: auto; }
-          @media (min-width: 0) and (max-width: 949px) {
-            #sneakers .sneakers .sneakers__pinky-model .gallery-top img {
-              width: 463px; } }
-          @media (min-width: 0) and (max-width: 499px) {
-            #sneakers .sneakers .sneakers__pinky-model .gallery-top img {
-              width: 363px; } }
-      #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs {
-        height: 96px;
-        padding-top: 14px;
-        width: 557px;
-        background-color: #fff; }
-        @media (min-width: 0) and (max-width: 949px) {
-          #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs {
-            width: 463px; } }
-        @media (min-width: 0) and (max-width: 499px) {
-          #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs {
-            width: 363px; } }
-        #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs .swiper-slide {
-          position: relative;
-          width: 144px;
-          padding-right: 17px;
-          height: 96px;
-          opacity: 0.6;
-          overflow: hidden; }
-          @media (min-width: 0) and (max-width: 949px) {
-            #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs .swiper-slide {
-              padding-right: 13px; } }
-          @media (min-width: 0) and (max-width: 499px) {
-            #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs .swiper-slide {
-              padding-right: 9px; } }
-          #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs .swiper-slide:last-child > img {
-            bottom: -20px; }
-          #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs .swiper-slide-thumb-active {
-            opacity: 1; }
-        #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs img {
-          position: absolute;
-          width: 140px;
-          bottom: 0; }
-          @media (min-width: 0) and (max-width: 949px) {
-            #sneakers .sneakers .sneakers__pinky-model .gallery-thumbs img {
-              width: 103px; } }
-      #sneakers .sneakers .sneakers__pinky-model .swiper-button {
-        border: 0;
-        background-color: #FF6492;
-        width: 40px;
-        height: 40px;
-        border-radius: 140px;
-        background-image: none !important;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        #sneakers .sneakers .sneakers__pinky-model .swiper-button p {
-          position: absolute;
-          color: #fff;
-          font-size: 35px;
-          top: -3px; }
-        #sneakers .sneakers .sneakers__pinky-model .swiper-button-next {
-          right: 0; }
-        #sneakers .sneakers .sneakers__pinky-model .swiper-button-prev {
-          left: 0; }
-      #sneakers .sneakers .sneakers__pinky-model .sneakers__info {
-        max-width: 459px;
-        height: 541px;
-        display: flex;
-        flex-direction: column; }
-        @media (min-width: 0) and (max-width: 779px) {
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__info {
-            margin-top: 15px;
-            margin: 0 auto;
-            text-align: center; } }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__info h1 {
-          font-size: 32px;
-          line-height: 38px;
-          color: #452A32;
-          font-family: Rubik;
-          font-weight: normal;
-          margin-bottom: 24px; }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__info p {
-          width: 100%;
-          font-size: 16px;
-          line-height: 23px;
-          color: #917D83;
-          font-family: Roboto;
-          font-weight: normal;
-          opacity: 0.9; }
-          @media (min-width: 0) and (max-width: 844px) {
-            #sneakers .sneakers .sneakers__pinky-model .sneakers__info p {
-              font-size: 14px; } }
-      #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button {
-        margin-top: 40px;
-        width: 226px;
-        height: 44px;
-        position: relative;
-        z-index: 10;
-        border: 1px solid #F2E0E5;
-        color: #917D83;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        border-radius: 30px;
-        font-size: 14px;
-        font-family: Roboto;
-        line-height: 125%;
-        padding-left: 25px;
-        padding-top: 13px;
-        background-color: #fff;
-        cursor: pointer; }
-        @media (min-width: 0) and (max-width: 870px) {
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button {
-            margin-top: 15px; } }
-        @media (min-width: 0) and (max-width: 779px) {
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button {
-            margin: 15px auto 0 auto;
-            text-align: left; } }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button > .arrow {
-          position: absolute;
-          color: #917D83;
-          font-size: 30px;
-          display: inline; }
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button > .arrow_down {
-            transform: rotate(90deg);
-            right: 20px; }
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button > .arrow_up {
-            transform: rotate(270deg);
-            right: 25px; }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown li {
-          width: 170px;
-          padding: 10px; }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown_on {
-          position: absolute;
-          top: 45px;
-          left: 25px;
-          visibility: visible; }
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown_on li:hover {
-            background: #bebebe;
-            border-radius: 10px; }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown_off {
-          position: absolute;
-          visibility: hidden; }
-      #sneakers .sneakers .sneakers__pinky-model .sneakers__prices {
-        position: relative;
-        margin-top: 55px;
-        font-family: Rubik;
-        font-weight: normal; }
-        @media (min-width: 0) and (max-width: 870px) {
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__prices {
-            margin-top: 15px; } }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__prices span:first-child {
-          color: #FF6492;
-          font-size: 24px;
-          line-height: 28px; }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__prices span:nth-child(2) {
-          color: #FF6492;
-          margin-left: 6px;
-          font-size: 16px;
-          line-height: 18.96px;
-          vertical-align: top; }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__prices span:nth-child(3) {
-          color: #BEBEBE;
-          margin-left: 18px;
-          font-size: 20px;
-          line-height: 24px;
-          vertical-align: top; }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__prices span:nth-child(4) {
-          color: #BEBEBE;
-          margin-left: 6px;
-          font-size: 16px;
-          line-height: 18.96px;
-          vertical-align: top; }
-        #sneakers .sneakers .sneakers__pinky-model .sneakers__prices .line {
-          position: relative;
-          display: inline-block;
-          right: 70px;
-          bottom: 10px;
-          width: 59px;
-          height: 2px;
-          border: 1.9px solid #BEBEBE;
-          transform: matrix(0.99, -0.14, 0.13, 0.99, 0, 0); }
-      #sneakers .sneakers .sneakers__pinky-model .sneakers__button {
-        width: 226px;
-        height: 44px;
-        margin-top: 32px;
-        background: linear-gradient(to left, #FFAC70 0%, #FF6492 100%);
-        box-shadow: 0 16px 30px rgba(255, 100, 146, 0.2);
-        border-radius: 600px;
-        cursor: pointer;
-        padding-top: 10px;
-        color: #fff;
+        .sneakers__pinky-model .sneakers__tabs {
+          margin: 0px auto; } }
+      .sneakers__pinky-model .sneakers__tabs .sneakers__tab {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 21px;
         text-align: center;
         font-family: Roboto;
+        color: #BEBEBE;
+        text-transform: capitalize;
+        margin-right: 48px;
+        background-position: 0 100%, 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% 4px;
+        cursor: pointer; }
+        .sneakers__pinky-model .sneakers__tabs .sneakers__tab_active, .sneakers__pinky-model .sneakers__tabs .sneakers__tab:hover {
+          background-image: linear-gradient(to left, #FFC670 -58.54%, #FF6492 159.35%);
+          color: #452A32; }
+        .sneakers__pinky-model .sneakers__tabs .sneakers__tab:last-child {
+          margin-right: 0; }
+    .sneakers__pinky-model .sneakers__photo {
+      margin-top: 42px;
+      max-width: 594px;
+      width: 100%;
+      margin-left: -10px; }
+      @media (min-width: 0) and (max-width: 779px) {
+        .sneakers__pinky-model .sneakers__photo {
+          margin: 15px auto 10px auto; } }
+    .sneakers__pinky-model .gallery-top {
+      width: 594px;
+      height: 360px; }
+      @media (min-width: 0) and (max-width: 949px) {
+        .sneakers__pinky-model .gallery-top {
+          width: 500px; } }
+      @media (min-width: 0) and (max-width: 499px) {
+        .sneakers__pinky-model .gallery-top {
+          width: 400px; } }
+      .sneakers__pinky-model .gallery-top .swiper-slide {
+        position: relative; }
+        .sneakers__pinky-model .gallery-top .swiper-slide:last-child > img {
+          bottom: -90px; }
+      .sneakers__pinky-model .gallery-top img {
+        right: 18.5px;
+        position: absolute;
+        width: 557px;
+        bottom: 0;
+        padding: auto; }
+        @media (min-width: 0) and (max-width: 949px) {
+          .sneakers__pinky-model .gallery-top img {
+            width: 463px; } }
+        @media (min-width: 0) and (max-width: 499px) {
+          .sneakers__pinky-model .gallery-top img {
+            width: 363px; } }
+    .sneakers__pinky-model .gallery-thumbs {
+      height: 96px;
+      padding-top: 14px;
+      width: 557px;
+      background-color: #fff; }
+      @media (min-width: 0) and (max-width: 949px) {
+        .sneakers__pinky-model .gallery-thumbs {
+          width: 463px; } }
+      @media (min-width: 0) and (max-width: 499px) {
+        .sneakers__pinky-model .gallery-thumbs {
+          width: 363px; } }
+      .sneakers__pinky-model .gallery-thumbs .swiper-slide {
+        position: relative;
+        width: 144px;
+        padding-right: 17px;
+        height: 96px;
+        opacity: 0.6;
+        overflow: hidden; }
+        @media (min-width: 0) and (max-width: 949px) {
+          .sneakers__pinky-model .gallery-thumbs .swiper-slide {
+            padding-right: 13px; } }
+        @media (min-width: 0) and (max-width: 499px) {
+          .sneakers__pinky-model .gallery-thumbs .swiper-slide {
+            padding-right: 9px; } }
+        .sneakers__pinky-model .gallery-thumbs .swiper-slide:last-child > img {
+          bottom: -20px; }
+        .sneakers__pinky-model .gallery-thumbs .swiper-slide-thumb-active {
+          opacity: 1; }
+      .sneakers__pinky-model .gallery-thumbs img {
+        position: absolute;
+        width: 140px;
+        bottom: 0; }
+        @media (min-width: 0) and (max-width: 949px) {
+          .sneakers__pinky-model .gallery-thumbs img {
+            width: 103px; } }
+    .sneakers__pinky-model .swiper-button {
+      border: 0;
+      background-color: #FF6492;
+      width: 40px;
+      height: 40px;
+      border-radius: 140px;
+      background-image: none !important;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .sneakers__pinky-model .swiper-button p {
+        position: absolute;
+        color: #fff;
+        font-size: 35px;
+        top: -3px; }
+      .sneakers__pinky-model .swiper-button-next {
+        right: 0; }
+      .sneakers__pinky-model .swiper-button-prev {
+        left: 0; }
+    .sneakers__pinky-model .sneakers__info {
+      max-width: 459px;
+      height: 541px;
+      display: flex;
+      flex-direction: column; }
+      @media (min-width: 0) and (max-width: 779px) {
+        .sneakers__pinky-model .sneakers__info {
+          margin-top: 15px;
+          margin: 0 auto;
+          text-align: center; } }
+      .sneakers__pinky-model .sneakers__info h1 {
+        font-size: 32px;
+        line-height: 38px;
+        color: #452A32;
+        font-family: Rubik;
         font-weight: normal;
+        margin-bottom: 24px; }
+      .sneakers__pinky-model .sneakers__info p {
+        width: 100%;
         font-size: 16px;
-        line-height: 23px; }
-        @media (min-width: 0) and (max-width: 870px) {
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__button {
-            margin-top: 15px; } }
-        @media (min-width: 0) and (max-width: 779px) {
-          #sneakers .sneakers .sneakers__pinky-model .sneakers__button {
-            margin: 10px auto 0 auto; } }
+        line-height: 23px;
+        color: #917D83;
+        font-family: Roboto;
+        font-weight: normal;
+        opacity: 0.9; }
+        @media (min-width: 0) and (max-width: 844px) {
+          .sneakers__pinky-model .sneakers__info p {
+            font-size: 14px; } }
+    .sneakers__pinky-model .sneakers__dd-button {
+      margin-top: 40px;
+      width: 226px;
+      height: 44px;
+      position: relative;
+      z-index: 10;
+      border: 1px solid #F2E0E5;
+      color: #917D83;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 30px;
+      font-size: 14px;
+      font-family: Roboto;
+      line-height: 125%;
+      padding-left: 25px;
+      padding-top: 13px;
+      background-color: #fff;
+      cursor: pointer; }
+      @media (min-width: 0) and (max-width: 870px) {
+        .sneakers__pinky-model .sneakers__dd-button {
+          margin-top: 15px; } }
+      @media (min-width: 0) and (max-width: 779px) {
+        .sneakers__pinky-model .sneakers__dd-button {
+          margin: 15px auto 0 auto;
+          text-align: left; } }
+      .sneakers__pinky-model .sneakers__dd-button > .arrow {
+        position: absolute;
+        color: #917D83;
+        font-size: 30px;
+        display: inline; }
+        .sneakers__pinky-model .sneakers__dd-button > .arrow_down {
+          transform: rotate(90deg);
+          right: 20px; }
+        .sneakers__pinky-model .sneakers__dd-button > .arrow_up {
+          transform: rotate(270deg);
+          right: 25px; }
+      .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown li {
+        width: 170px;
+        padding: 10px; }
+      .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown_on {
+        position: absolute;
+        top: 45px;
+        left: 25px;
+        visibility: visible; }
+        .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown_on li:hover {
+          background: #bebebe;
+          border-radius: 10px; }
+      .sneakers__pinky-model .sneakers__dd-button .dd-button__dropdown_off {
+        position: absolute;
+        visibility: hidden; }
+    .sneakers__pinky-model .sneakers__prices {
+      position: relative;
+      margin-top: 55px;
+      font-family: Rubik;
+      font-weight: normal; }
+      @media (min-width: 0) and (max-width: 870px) {
+        .sneakers__pinky-model .sneakers__prices {
+          margin-top: 15px; } }
+      .sneakers__pinky-model .sneakers__prices span:first-child {
+        color: #FF6492;
+        font-size: 24px;
+        line-height: 28px; }
+      .sneakers__pinky-model .sneakers__prices span:nth-child(2) {
+        color: #FF6492;
+        margin-left: 6px;
+        font-size: 16px;
+        line-height: 18.96px;
+        vertical-align: top; }
+      .sneakers__pinky-model .sneakers__prices span:nth-child(3) {
+        color: #BEBEBE;
+        margin-left: 18px;
+        font-size: 20px;
+        line-height: 24px;
+        vertical-align: top; }
+      .sneakers__pinky-model .sneakers__prices span:nth-child(4) {
+        color: #BEBEBE;
+        margin-left: 6px;
+        font-size: 16px;
+        line-height: 18.96px;
+        vertical-align: top; }
+      .sneakers__pinky-model .sneakers__prices .line {
+        position: relative;
+        display: inline-block;
+        right: 70px;
+        bottom: 10px;
+        width: 59px;
+        height: 2px;
+        border: 1.9px solid #BEBEBE;
+        transform: matrix(0.99, -0.14, 0.13, 0.99, 0, 0); }
+    .sneakers__pinky-model .sneakers__button {
+      width: 226px;
+      height: 44px;
+      margin-top: 32px;
+      background: linear-gradient(to left, #FFAC70 0%, #FF6492 100%);
+      box-shadow: 0 16px 30px rgba(255, 100, 146, 0.2);
+      border-radius: 600px;
+      cursor: pointer;
+      padding-top: 10px;
+      color: #fff;
+      text-align: center;
+      font-family: Roboto;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px; }
+      @media (min-width: 0) and (max-width: 870px) {
+        .sneakers__pinky-model .sneakers__button {
+          margin-top: 15px; } }
+      @media (min-width: 0) and (max-width: 779px) {
+        .sneakers__pinky-model .sneakers__button {
+          margin: 10px auto 0 auto; } }
 
-#advantages {
+.advantages-screen {
   background: #F9F9F9;
   width: 100%;
   height: 541.9px;
   border: 0.1px solid #F9F9F9; }
-  #advantages .advantages__headline {
+  .advantages-screen__headline {
     margin: 106px;
     text-align: center; }
     @media (min-width: 0) and (max-width: 649px) {
-      #advantages .advantages__headline {
+      .advantages-screen__headline {
         margin: 30px;
         margin-bottom: 15px; } }
-    #advantages .advantages__headline p {
+    .advantages-screen__headline p {
       font-family: Rubik;
       font-weight: 500;
       font-size: 42px;
       line-height: 50px;
       color: #452A32; }
-  #advantages .advantages {
+  .advantages-screen .advantages-screen__advantages {
     max-width: 1050px;
     width: 100%;
     height: 205px;
@@ -1295,15 +1286,15 @@ ol, ul {
     display: flex;
     justify-content: space-between; }
     @media (min-width: 0) and (max-width: 649px) {
-      #advantages .advantages {
+      .advantages-screen .advantages-screen__advantages {
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
         margin: 0 auto; } }
     @media (min-width: 0) and (max-width: 649px) {
-      #advantages .advantages .advantages__advantage {
+      .advantages-screen .advantages-screen__advantages .advantages__advantage {
         margin: 10px; } }
-    #advantages .advantages .advantages__advantage .advantages__advantage-img {
+    .advantages-screen .advantages-screen__advantages .advantages__advantage .advantages__advantage-img {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1313,22 +1304,23 @@ ol, ul {
       border-radius: 98px;
       background: linear-gradient(125.58deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
       transform: matrix(-1, 0, 0, 1, 0, 0); }
-      #advantages .advantages .advantages__advantage .advantages__advantage-img svg {
+      .advantages-screen .advantages-screen__advantages .advantages__advantage .advantages__advantage-img svg {
         transform: scale(-1, 1); }
-      #advantages .advantages .advantages__advantage .advantages__advantage-img:first-child .advantages__advantage-img-wrapper {
+      .advantages-screen .advantages-screen__advantages .advantages__advantage .advantages__advantage-img:first-child .advantages__advantage-img-wrapper {
         position: relative;
         right: 1px; }
-      #advantages .advantages .advantages__advantage .advantages__advantage-img:nth-child(3) .advantages__advantage-img-wrapper {
+      .advantages-screen .advantages-screen__advantages .advantages__advantage .advantages__advantage-img:nth-child(3) .advantages__advantage-img-wrapper {
         position: relative;
         right: 1px; }
-    #advantages .advantages .advantages__advantage .advantages__advantage-content {
+    .advantages-screen .advantages-screen__advantages .advantages__advantage .advantages__advantage-content {
       text-align: center; }
-      #advantages .advantages .advantages__advantage .advantages__advantage-content h2 {
+      .advantages-screen .advantages-screen__advantages .advantages__advantage .advantages__advantage-content h2 {
         font-family: Rubik;
+        font-weight: 500;
         font-size: 20px;
         line-height: 24px;
         color: #452A32; }
-      #advantages .advantages .advantages__advantage .advantages__advantage-content p {
+      .advantages-screen .advantages-screen__advantages .advantages__advantage .advantages__advantage-content p {
         font-family: Roboto;
         font-weight: normal;
         font-size: 16px;
@@ -1341,11 +1333,11 @@ ol, ul {
   width: 100%;
   border: 0.1px solid #fff;
   background: #fff; }
-  .feedback .feedback__headline {
+  .feedback__headline {
     margin-top: 72px;
     display: flex;
     justify-content: center; }
-    .feedback .feedback__headline p {
+    .feedback__headline p {
       font-family: Rubik;
       font-weight: 500;
       font-size: 42px;
@@ -1354,7 +1346,7 @@ ol, ul {
   .feedback .swiper-container {
     max-width: 1140px;
     height: 282px;
-    margin: 0 15px; }
+    margin: 0 auto; }
     .feedback .swiper-container .swiper-wrapper .swiper-slide {
       display: flex;
       justify-content: center; }
@@ -1427,35 +1419,35 @@ ol, ul {
 
 .pay-and-delivery {
   height: 535.9px;
-  weight: 100%;
+  width: 100%;
   background-color: #F9F9F9;
   border: 0.1px solid #F9F9F9; }
-  .pay-and-delivery .pay-and-delivery__headline {
+  .pay-and-delivery__headline {
     display: flex;
     justify-content: center;
     margin-top: 72px; }
     @media (min-width: 0) and (max-width: 899px) {
-      .pay-and-delivery .pay-and-delivery__headline {
+      .pay-and-delivery__headline {
         margin-top: 30px; } }
-    .pay-and-delivery .pay-and-delivery__headline p {
+    .pay-and-delivery__headline p {
       font-family: Rubik;
       font-size: 42px;
       font-weight: 500;
       line-height: 50px;
       color: #452A32; }
-  .pay-and-delivery .pay-and-delivery__buy-process {
+  .pay-and-delivery__buy-process {
     margin: 52px;
     height: 181px;
     display: flex;
     justify-content: center;
     align-items: flex-start; }
-    .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage {
+    .pay-and-delivery__buy-process-stage {
       padding: 0 43.5px;
       text-align: center; }
       @media (min-width: 0) and (max-width: 699px) {
-        .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage {
+        .pay-and-delivery__buy-process-stage {
           padding: 0 20px; } }
-      .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage .img {
+      .pay-and-delivery__buy-process-stage .img {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1465,33 +1457,33 @@ ol, ul {
         background: linear-gradient(124.96deg, #FF75B7 12.51%, rgba(255, 100, 109, 0.89) 85.3%);
         transform: matrix(-1, 0, 0, 1, 0, 0);
         border-radius: 50%; }
-        .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage .img svg {
+        .pay-and-delivery__buy-process-stage .img svg {
           transform: scale(-1, 1); }
-      .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage .pay-and-delivery__buy-process-description {
-        margin-top: 24px; }
-        .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-stage .pay-and-delivery__buy-process-description p {
-          font-family: Roboto;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 22px;
-          color: #000; }
-    .pay-and-delivery .pay-and-delivery__buy-process .pay-and-delivery__buy-process-arrow {
+    .pay-and-delivery__buy-process-description {
+      margin-top: 24px; }
+      .pay-and-delivery__buy-process-description p {
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000; }
+    .pay-and-delivery__buy-process-arrow {
       padding-top: 20px;
       width: 15px;
       height: 24px;
       font-size: 47px;
       color: rgba(255, 100, 109, 0.81); }
     @media (min-width: 0) and (max-width: 699px) {
-      .pay-and-delivery .pay-and-delivery__buy-process {
+      .pay-and-delivery__buy-process {
         flex-wrap: wrap;
         width: 100%;
         margin: 0 auto; } }
     @media (min-width: 0) and (max-width: 629px) {
-      .pay-and-delivery .pay-and-delivery__buy-process :nth-child(4) p {
+      .pay-and-delivery__buy-process :nth-child(4) p {
         display: none; }
-      .pay-and-delivery .pay-and-delivery__buy-process :nth-child(5) {
+      .pay-and-delivery__buy-process :nth-child(5) {
         padding-left: 0; } }
-  .pay-and-delivery .pay-and-delivery__button {
+  .pay-and-delivery__button {
     margin: 72px auto 0;
     border: 0.1px solid rgba(0, 0, 0, 0);
     width: 266px;
@@ -1501,12 +1493,12 @@ ol, ul {
     box-shadow: 0 16px 30px rgba(255, 100, 146, 0.2);
     cursor: pointer; }
     @media (min-width: 0) and (max-width: 899px) {
-      .pay-and-delivery .pay-and-delivery__button {
+      .pay-and-delivery__button {
         margin-top: 100px; } }
     @media (min-width: 0) and (max-width: 699px) {
-      .pay-and-delivery .pay-and-delivery__button {
+      .pay-and-delivery__button {
         margin-top: 200px; } }
-    .pay-and-delivery .pay-and-delivery__button p {
+    .pay-and-delivery__button p {
       text-align: center;
       margin: 10px auto;
       font-family: Roboto;
@@ -1530,33 +1522,33 @@ ol, ul {
       flex-direction: column;
       height: 866px;
       margin: 0 auto; } }
-  .contacts .contacts__map {
+  .contacts__map {
     max-width: 700px; }
     @media (min-width: 0) and (max-width: 1023px) {
-      .contacts .contacts__map {
+      .contacts__map {
         max-width: 1024px; } }
-  .contacts .contacts__info {
+  .contacts__info {
     width: 50%;
     margin: 64px; }
-    .contacts .contacts__info .contacts__phone {
-      font-size: 24px;
-      line-height: 29px; }
-    .contacts .contacts__info .contacts__mail, .contacts .contacts__info .contacts__address {
-      font-size: 16px;
-      line-height: 19px;
-      margin-top: 16px; }
-    .contacts .contacts__info .contacts__address {
-      margin-top: 32px; }
-    .contacts .contacts__info .contacts__social-media {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-top: 64px; }
-      .contacts .contacts__info .contacts__social-media div {
-        margin: 0 35px 0 0; }
-        .contacts .contacts__info .contacts__social-media div svg:last-child {
-          margin: 0; }
-    .contacts .contacts__info .contacts__developer {
-      position: absolute;
-      bottom: 64px;
-      color: #607894; }
+  .contacts__phone {
+    font-size: 24px;
+    line-height: 29px; }
+  .contacts__mail, .contacts__address {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 16px; }
+  .contacts__address {
+    margin-top: 32px; }
+  .contacts__social-media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 64px; }
+    .contacts__social-media div {
+      margin: 0 35px 0 0; }
+      .contacts__social-media div svg:last-child {
+        margin: 0; }
+  .contacts__developer {
+    position: absolute;
+    bottom: 64px;
+    color: #607894; }

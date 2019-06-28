@@ -1,15 +1,18 @@
 .sneakers {
-    max-width: 1165px;
+    
+    background-color: #fff;
     width: 100%;
-    height: 638px;
+    height: auto;
     margin: 0 auto;
-    margin-top: 71px;
+    padding-top: 71px;
+    
     @include media(0, 780px){
-        margin-top: 15px;
-        
+        padding-top: 15px;
+        height: 1000px;
     }
     
-    .sneakers__headline {
+    
+    &__headline {
         max-width: 1126px;
         height: 38px;
         font-family: Rubik;
@@ -21,8 +24,8 @@
         line-height: 50px;
         color: #452A32;
     }
-    .sneakers__pinky-model {
-        margin-top: 58px;
+    &__pinky-model {
+        margin: 58px auto 0 auto;
         position: relative;
         max-width: 1163.8px;
         width: 100%;
@@ -33,7 +36,6 @@
         @include media(0, 780px){
             flex-direction: column;
             margin-top:20px;
-            // justify-content: center;
         }
         @import "pinky-model";
     }

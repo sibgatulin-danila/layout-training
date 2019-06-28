@@ -1,4 +1,4 @@
-.contacts{
+.contacts {
     display: flex;
     justify-content: flex-start;
     position: relative;
@@ -10,50 +10,62 @@
     font-family: Proxima Nova;
     font-style: normal;
 
-    @include media(0, 1024px){
+    @include media(0, 1024px) {
         flex-direction: column;
-        height: 866px;;
+        height: 866px;
+        ;
         margin: 0 auto;
     }
 
-    .contacts__map{
-        max-width: 700px;;
-        @include media(0, 1024px){
+    &__map {
+        max-width: 700px;
+        ;
+
+        @include media(0, 1024px) {
             max-width: 1024px;
         }
     }
 
-    .contacts__info{
+    &__info {
         width: 50%;
         margin: 64px;
-        .contacts__phone{
-            font-size: 24px;
-            line-height: 29px;
-        }
-        .contacts__mail, .contacts__address{
-            font-size: 16px;
-            line-height: 19px;
-            margin-top: 16px;
-        }
-        .contacts__address{
-            margin-top: 32px;
-        }
-        .contacts__social-media{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            margin-top: 64px;
-            div{
-                margin: 0 35px 0 0;;
-                & svg:last-child{
-                    margin:0;
-                }
+    }
+
+    &__phone {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &__mail,
+    &__address {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 16px;
+    }
+
+    &__address {
+        margin-top: 32px;
+    }
+
+    &__social-media {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 64px;
+
+        div {
+            margin: 0 35px 0 0;
+            ;
+
+            svg:last-child {
+                margin: 0;
             }
         }
-        .contacts__developer{
-            position:absolute;
-            bottom: 64px;
-            color: #607894;
-        }
+    }
+
+    &__developer {
+        position: absolute;
+        bottom: 64px;
+        color: #607894;
     }
 }

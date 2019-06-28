@@ -1,4 +1,4 @@
-#header {
+.header {
     margin-top: 32px;
     height: 40px;
     font-family: Proxima Nova;
@@ -10,45 +10,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .header__menu {
+
+    &__menu {
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
         display: flex;
-        @include media(0, 450px){
+
+        @include media(0, 450px) {
             margin-right: 0;
         }
-        & li {
+
+        li {
             float: left;
             margin-right: 40px;
-            &:last-child {
+
+            :last-child {
                 margin-right: 0;
             }
+
             a {
                 font-size: 16px;
                 color: #fff;
+
                 @include media(0, $mediaSM) {
                     font-size: 12px;
                 }
             }
         }
     }
-    .header__contact {
+
+    &__contact {
         text-align: center;
         font-size: 16px;
-        font-weight: bold;   
+        font-weight: bold;
         width: 145px;
+
         @include media(0, $mediaSM) {
             font-size: 12px;
         }
     }
-    @include media(0, 450px){
+
+    @include media(0, 450px) {
         flex-direction: column;
         height: 150px;
-        margin-top: 10px; 
+        margin-top: 10px;
         margin-left: 30px;
         margin-right: 30px;
     }
 }
-
-
